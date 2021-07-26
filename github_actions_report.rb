@@ -74,7 +74,7 @@ rescue StandardError => e
     "url": "https://github.com/#{v['github']}",
     "name": v['title'],
     "workflows": 'Not available',
-    "runs": 'Not available',
+    "runs": [],
     "agent": 'Not available',
     "os": 'Not available'
   }
