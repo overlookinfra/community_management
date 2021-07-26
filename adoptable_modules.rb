@@ -55,6 +55,7 @@ def repo_name_from_url(url)
 end
 
 def repo_info(repo)
+  @client.repository(repo).check_limit_api()
   return nil if repo.nil?
   begin
     info = @client.repository(repo)
