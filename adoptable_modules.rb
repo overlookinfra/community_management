@@ -6,11 +6,11 @@ require 'optparse'
 require_relative 'octokit_utils'
 require 'puppet_forge'
 
-PuppetForge.user_agent = "IAC Community Management/1.0.0"
+PuppetForge.user_agent = 'IAC Community Management/1.0.0'
 
 @oauth      = ENV['GITHUB_COMMUNITY_TOKEN'] || ENV['GITHUB_TOKEN']
 @ineligible = [
-  'puppetlabs-amazon_aws',
+  'puppetlabs-amazon_aws'
 ]
 
 parser = OptionParser.new do |opts|
@@ -33,15 +33,17 @@ util = OctokitUtils.new(@oauth)
 @client = util.client
 
 def year_ago(n = 1)
-  @year ||= (60*60*24*365)
+  @year ||= (60 * 60 * 24 * 365)
   Time.now - (n * @year)
 end
+
 def month_ago(n = 1)
-  @month ||= (60*60*24*30)
+  @month ||= (60 * 60 * 24 * 30)
   Time.now - (n * @month)
 end
+
 def week_ago(n = 1)
-  @week ||= (60*60*24*7)
+  @week ||= (60 * 60 * 24 * 7)
   Time.now - (n * @week)
 end
 
@@ -49,14 +51,14 @@ def repo_name_from_url(url)
   return unless url.is_a? String
 
   # extracts <user name>/<repo name> and strips off optional ".git" string
-  matches = url.match(/github\.com[\/:]([\w\/-]+)(?:\.git)?$/)
+  matches = url.match(%r{github\.com[/:]([\w/-]+)(?:\.git)?$})
 
   matches[1] if matches
 end
 
 def repo_info(repo)
-  @client.repository(repo).check_limit_api()
   return nil if repo.nil?
+
   begin
     info = @client.repository(repo)
   rescue Octokit::NotFound
@@ -66,10 +68,11 @@ def repo_info(repo)
   end
 
   info.issues, info.pulls = @client.list_issues(repo).partition { |issue| issue.has_key? :pull_request }
-  info.all_commits   = @client.commits(repo)
-  info.check_limit_api()
+  info.check_limit_api
+  info.all_commits = @client.commits(repo)
+  info.check_limit_api
   info.fresh_commits = @client.commits_since(repo, year_ago.to_date) # commits in the last year
-  info.check_limit_api()
+  info.check_limit_api
 
   info
 end
@@ -79,16 +82,19 @@ def eligible?(mod)
 
   # don't even bother checking the repo if the current release is newer than 6 months
   return if DateTime.parse(mod.current_release.created_at) > (month_ago(6).to_date)
-
+  begin 
   repo = repo_info(repo_name_from_url(mod.current_release.metadata[:source]))
+  rescue StandardError => e
+    puts "Encountered error for repository #{repo}: #{e}"
+  end
 
   if repo.nil?
-    $stderr.puts ("Warning: deleted module repository - #{mod.slug}")
+    warn("Warning: deleted module repository - #{mod.slug}")
     return
   end
 
   if repo.archived
-    $stderr.puts ("Warning: archived module repository - #{mod.slug}")
+    warn("Warning: archived module repository - #{mod.slug}")
     return true
   end
 
@@ -98,8 +104,8 @@ def eligible?(mod)
   return if repo.fresh_commits.size > 2           # has had more than two "fresh" commits
   return if repo.all_commits.first.commit.committer.date > month_ago(3) # has had any commits in the last three month
 
-  unless repo.pulls.empty?
-    return if repo.pulls.last.created_at > year_ago # oldest PR is less than a year old
+  if !repo.pulls.empty? && (repo.pulls.last.created_at > year_ago)
+    return # oldest PR is less than a year old
   end
 
   # all eligibiliity checks complete
@@ -107,13 +113,12 @@ def eligible?(mod)
 end
 
 modules = PuppetForge::Module.where(
-             :owner           => 'puppetlabs', # rubocop:disable Layout/FirstArgumentIndentation
-             :hide_deprecated => true,
-             :module_groups   => 'base pe_only',
-          )
+             owner: 'puppetlabs', # rubocop:disable Layout/FirstArgumentIndentation
+             hide_deprecated: true,
+             module_groups: 'base pe_only'
+           )
 
 raise "No modules found for #{namespace}." if modules.total.zero?
-
 
 adoption_list = {}
 modules.unpaginated.each do |mod|
@@ -121,20 +126,20 @@ modules.unpaginated.each do |mod|
   next unless eligible?(mod)
 
   adoption_list[mod.slug] = {
-    :name           => mod.name,
-    :owner          => mod.owner.username,
-    :slug           => mod.slug,
-    :description    => mod.current_release.metadata[:summary],
-    :gravatar_id    => mod.owner.gravatar_id,
-    :version        => mod.current_release.version,
-    :updated_at     => DateTime.parse(mod.updated_at).strftime('%-d %b %Y'),
-    :downloads      => mod.downloads,
-    :feedback_score => mod.feedback_score,
-    :homepage_url   => mod.homepage_url,
+    name: mod.name,
+    owner: mod.owner.username,
+    slug: mod.slug,
+    description: mod.current_release.metadata[:summary],
+    gravatar_id: mod.owner.gravatar_id,
+    version: mod.current_release.version,
+    updated_at: DateTime.parse(mod.updated_at).strftime('%-d %b %Y'),
+    downloads: mod.downloads,
+    feedback_score: mod.feedback_score,
+    homepage_url: mod.homepage_url,
     # Which of the modules.json fields are required?
-    :title          => mod.name,
-    :github         => repo_name_from_url(mod.homepage_url),
-    :puppet_module  => mod.slug.sub('-','/'),
+    title: mod.name,
+    github: repo_name_from_url(mod.homepage_url),
+    puppet_module: mod.slug.sub('-', '/')
   }
 end
 
