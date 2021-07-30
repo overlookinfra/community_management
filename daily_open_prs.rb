@@ -36,14 +36,15 @@ start_date = end_date - 20
 
 # Currently open per day
 days = []
-open = []
+open_prs = []
 (start_date..end_date).each do |day_to_check|
   puppet_prs = 0
   community_prs = 0
-
   created_puppet_prs = 0
   created_community_prs = 0
   all_pulls.each do |pull|
+    next unless pull.user[:type] == 'User'
+
     if pull[:created_at].to_date == day_to_check
       if puppet_members.key?(pull.user[:login])
         created_puppet_prs += 1
@@ -55,12 +56,16 @@ open = []
       if (pull[:closed_at].to_date >= day_to_check) && (pull[:created_at].to_date <= day_to_check)
         if puppet_members.key?(pull.user[:login])
           puppet_prs += 1
+          puts puppet_prs
         else
           community_prs += 1
+
         end
+
       end
     elsif (pull[:state] == 'open') && (pull[:created_at].to_date <= day_to_check)
       if puppet_members.key?(pull.user[:login])
+
         puppet_prs += 1
       else
         community_prs += 1
@@ -71,20 +76,18 @@ open = []
   row = { 'date' => day_to_check.strftime('%F'), 'community' => community_prs, 'puppet' => puppet_prs, 'total' => daily_total }
   open_row = { 'date' => day_to_check.strftime('%F'), 'puppet' => created_puppet_prs, 'community' => created_community_prs }
   days.push(row)
-  open.push(open_row)
-  day_to_check += 1
+  open_prs.push(open_row)
 end
-
 # Creates the CSV files
 CSV.open('daily_open_prs.csv', 'wb') do |csv|
-  csv << %w[ community puppet ]
+  csv << %w[community puppet]
   days.each do |day|
     csv << [day['community'], day['puppet']]
   end
 end
 CSV.open('created_per_day.csv', 'wb') do |csv|
   csv << %w[date puppet community]
-  open.each do |o|
+  open_prs.each do |o|
     csv << [o['date'], o['puppet'], o['community']]
   end
 end
