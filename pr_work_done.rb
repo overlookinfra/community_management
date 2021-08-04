@@ -47,7 +47,7 @@ parsed.each do |_k, v|
   end
   # all comments made by organisation members
   closed_pr_information_cache.each do |pull|
-    next if pull[:issue_comments].empty?
+    next if pull[:issue_comments].empty? && pull[:pull][:user][:type] == 'User'
 
     pull[:issue_comments].each do |comment|
       comments.push(comment) if members_of_organisation.key?(comment.user.login)
@@ -63,12 +63,12 @@ week_data = []
   # find closed
   closed = 0
   all_closed_pulls.each do |pull|
-    closed += 1 if (pull[:closed_at] < right_bound.to_time) && (pull[:closed_at] > left_bound.to_time)
+    closed += 1 if (pull[:closed_at] < right_bound.to_time) && (pull[:closed_at] > left_bound.to_time) && pull[:user][:type] == 'User'
   end
   # find merged
   merged = 0
   all_merged_pulls.each do |pull|
-    merged += 1 if (pull[:closed_at] < right_bound.to_time) && (pull[:closed_at] > left_bound.to_time)
+    merged += 1 if (pull[:closed_at] < right_bound.to_time) && (pull[:closed_at] > left_bound.to_time) && pull[:user][:type] == 'User'  
   end
   # find commments from puppet
   comment_count = 0
