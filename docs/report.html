@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>35</td>
+        <td>36</td>
       
   
   
@@ -261,78 +261,6 @@ ga('set', 'anonymizeIp', true);
   <tr>
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-accounts'>puppetlabs-accounts</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-accounts/pull/388'>388</a></td>
-  
-  
-  
-      
-        <td>56</td>
-      
-  
-  
-  
-      
-        <td>vollmerk</td>
-      
-  
-  
-  
-      
-        <td>MODULES-11100 - Add sk-ecdsa public key support, and implement tests for sk-ecdsa and ecdsa keys</td>
-      
-  
-  
-  
-      
-        <td>> Looks good, only a few rubocop errors, do you mind if you fix them? Or I can fix it
-
-You'll likely be able to fix them faster than I can, thanks! </td>
-      
-  
-  
-  
-      
-        <td>vollmerk</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>12</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-acl'>puppetlabs-acl</a></td>
   
   
@@ -346,7 +274,7 @@ You'll likely be able to fix them faster than I can, thanks! </td>
   
   
       
-        <td>56</td>
+        <td>57</td>
       
   
   
@@ -376,7 +304,7 @@ You'll likely be able to fix them faster than I can, thanks! </td>
   
   
       
-        <td>29</td>
+        <td>30</td>
       
   
   
@@ -416,7 +344,7 @@ You'll likely be able to fix them faster than I can, thanks! </td>
   
   
       
-        <td>21</td>
+        <td>22</td>
       
   
   
@@ -448,7 +376,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>20</td>
+        <td>22</td>
       
   
   
@@ -488,7 +416,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>49</td>
+        <td>50</td>
       
   
   
@@ -702,7 +630,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>49</td>
+        <td>50</td>
       
   
   
@@ -737,12 +665,84 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+  
+  
+  
+      
+        <td>41</td>
+      
+  
+  
+  
+      
+        <td>storm49152</td>
+      
+  
+  
+  
+      
+        <td>Fetch correct _module_id value in apache::mod::php</td>
+      
+  
+  
+  
+      
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>36</td>
+      
+  
+  
+  
+      
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
   
   
   
       
-        <td>48</td>
+        <td>49</td>
       
   
   
@@ -787,7 +787,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>48</td>
+        <td>49</td>
       
   
   
@@ -814,7 +814,7 @@ Exact matches are those that we can positively identify via namespace and the de
   <tr>
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-dropsonde'>puppetlabs-dropsonde</a></td>
   
   
   
@@ -822,50 +822,63 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-dropsonde/pull/16'>16</a></td>
   
   
   
       
-        <td>40</td>
-      
-  
-  
-  
-      
-        <td>storm49152</td>
+        <td>1</td>
       
   
   
   
       
-        <td>Fetch correct _module_id value in apache::mod::php</td>
+        <td>adrianiurca <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
       
   
   
   
       
-        <td>I think you're right. Here's the relevant code:
-https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
-It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+        <td>[IAC-1730] - allow dropsonde to use other schedule services</td>
       
   
   
   
       
-        <td>ekohl</td>
+        <td>[dropsonde](https://github.com/puppetlabs/puppetlabs-dropsonde/blob/dc7dbf7e1ee0d55b24ffbeb5f05972b5548c34c2/manifests/init.pp) is a _class_
+----------------------------------
+
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 0 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
       
   
   
   
       
-        <td>35</td>
+        <td>puppet-community-rangefinder[bot]</td>
       
   
   
   
       
-        <td>4</td>
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>1</td>
       
   
   
@@ -899,7 +912,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>146</td>
+        <td>147</td>
       
   
   
@@ -929,7 +942,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>119</td>
+        <td>120</td>
       
   
   
@@ -969,7 +982,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>261</td>
+        <td>262</td>
       
   
   
@@ -999,7 +1012,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>134</td>
+        <td>135</td>
       
   
   
@@ -1039,7 +1052,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>43</td>
+        <td>44</td>
       
   
   
@@ -1236,7 +1249,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>43</td>
+        <td>44</td>
       
   
   
@@ -1276,7 +1289,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>238</td>
+        <td>239</td>
       
   
   
@@ -1306,7 +1319,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>57</td>
+        <td>58</td>
       
   
   
@@ -1346,7 +1359,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
@@ -1376,7 +1389,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
@@ -1416,7 +1429,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>11</td>
+        <td>12</td>
       
   
   
@@ -1446,7 +1459,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>11</td>
+        <td>12</td>
       
   
   
@@ -1486,7 +1499,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>8</td>
+        <td>9</td>
       
   
   
@@ -1551,7 +1564,43 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes/pull/530'>530</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes/pull/525'>525</a></td>
+  
+  
+  
+      
+        <td>33</td>
+      
+  
+  
+  
+      
+        <td>danifr <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>Make sure kubelet gets restarted after package version change</td>
+      
+  
+  
+  
+      
+        <td>@daianamezdrea OMG thanks a lot!!!</td>
+      
+  
+  
+  
+      
+        <td>danifr</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
   
   
   
@@ -1562,19 +1611,192 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>peteroruba</td>
+        <td>false</td>
       
   
   
   
       
-        <td>Enable live-restore for Docker daemon.</td>
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes'>puppetlabs-kubernetes</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes/pull/531'>531</a></td>
+  
+  
+  
+      
+        <td>0</td>
       
   
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-kubernetes?pullRequest=530) All committers have signed the CLA.</td>
+        <td>treydock</td>
+      
+  
+  
+  
+      
+        <td>Support Kubernetes 1.22 and kubeadm v1beta3 configurations</td>
+      
+  
+  
+  
+      
+        <td>This is diff between `v1beta2` and `v1beta3`. Changes based on API documentation: https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/
+
+```diff
+diff -wur templates/v1beta2/config_kubeadm.yaml.erb templates/v1beta3/config_kubeadm.yaml.erb
+--- templates/v1beta2/config_kubeadm.yaml.erb	2021-08-09 15:07:53.000000000 -0400
++++ templates/v1beta3/config_kubeadm.yaml.erb	2021-08-09 15:49:02.000000000 -0400
+@@ -1,4 +1,4 @@
+-apiVersion: kubeadm.k8s.io/v1beta2
++apiVersion: kubeadm.k8s.io/v1beta3
+ bootstrapTokens:
+ - groups:
+   - system:bootstrappers:kubeadm:default-node-token
+@@ -30,6 +30,12 @@
+     
+     
+     
++
++skipPhases:
++
++- 
++
++
+ ---
+ apiServer:
+   timeoutForControlPlane: 4m0s
+@@ -55,7 +61,7 @@
+     pathType: 
+   
+ 
+-apiVersion: kubeadm.k8s.io/v1beta2
++apiVersion: kubeadm.k8s.io/v1beta3
+ certificatesDir: /etc/kubernetes/pki
+ 
+ clusterName: 
+@@ -85,8 +91,6 @@
+     
+   
+ 
+-dns:
+-  type: CoreDNS
+ etcd:
+     external:
+         caFile: /etc/kubernetes/pki/etcd/ca.crt
+diff -wur templates/v1beta2/config_worker.yaml.erb templates/v1beta3/config_worker.yaml.erb
+--- templates/v1beta2/config_worker.yaml.erb	2021-08-09 15:07:53.000000000 -0400
++++ templates/v1beta3/config_worker.yaml.erb	2021-08-09 15:59:07.000000000 -0400
+@@ -1,10 +1,9 @@
+-apiVersion: kubeadm.k8s.io/v1beta2
++apiVersion: kubeadm.k8s.io/v1beta3
+ caCertPath: /etc/kubernetes/pki/ca.crt
+ kind: JoinConfiguration
+ 
+ clusterName: 
+ 
+-
+ discovery:
+   timeout: 5m0s
+   bootstrapToken:
+@@ -33,4 +32,9 @@
+ 
+ featureGates: 
+ 
+-
++
++skipPhases:
++
++- 
++
++
+```</td>
+      
+  
+  
+  
+      
+        <td>treydock</td>
+      
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1428'>1428</a></td>
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>fuyar</td>
+      
+  
+  
+  
+      
+        <td>Combine multiple grants into one while checking state</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) All committers have signed the CLA.</td>
       
   
   
@@ -1586,7 +1808,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>6</td>
+        <td>1</td>
       
   
   
@@ -1613,7 +1835,7 @@ Exact matches are those that we can positively identify via namespace and the de
   <tr>
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes'>puppetlabs-kubernetes</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
   
   
   
@@ -1621,48 +1843,48 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-kubernetes/pull/525'>525</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
   
   
   
       
-        <td>32</td>
-      
-  
-  
-  
-      
-        <td>danifr <span class='badge badge-secondary'>vox</span></td>
+        <td>43</td>
       
   
   
   
       
-        <td>Make sure kubelet gets restarted after package version change</td>
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
       
   
   
   
       
-        <td>Hi @danifr, thank you ! Yes, I'll have a look, I'll try to debug it locally and see what is not working fine  </td>
+        <td>WIP - Remove backup classes</td>
       
   
   
   
       
-        <td>daianamezdrea</td>
+        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
       
   
   
   
       
-        <td>28</td>
+        <td>pmcmaw</td>
       
   
   
   
       
-        <td>4</td>
+        <td>37</td>
+      
+  
+  
+  
+      
+        <td>1</td>
       
   
   
@@ -1696,7 +1918,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>145</td>
+        <td>146</td>
       
   
   
@@ -1727,7 +1949,7 @@ Thanks</td>
   
   
       
-        <td>18</td>
+        <td>19</td>
       
   
   
@@ -1762,222 +1984,12 @@ Thanks</td>
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
-  
-  
-  
-      
-        <td>33</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>Deprecate unsupported Solaris platform</td>
-      
-  
-  
-  
-      
-        <td>Hi @ghoneycutt, @alexjfisher, I want to highlight here the difference between supported and compatible. As you said in a previous comment, solaris is not in the metadata.json file, so it's not supported by this module (it's not tested on solaris), but it might be compatible. Indeed , we had some private Jenkins based test frameworks, but still we didn't have tested against solaris and we don't have images for solaris in our nightlies/test PRs from GCP (what we currently use, we used Jenkins in the past). As a conclusion, solaris is not supported, but compatible (maybe) with this module, so, I'll say not to merge this PR, but @binford2k can have the final answer here.  </td>
-      
-  
-  
-  
-      
-        <td>daianamezdrea</td>
-      
-  
-  
-  
-      
-        <td>29</td>
-      
-  
-  
-  
-      
-        <td>5</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
-  
-  
-  
-      
-        <td>40</td>
-      
-  
-  
-  
-      
-        <td>tejasbhosale009</td>
-      
-  
-  
-  
-      
-        <td>(feat) allow to set and run backups using another user via cron</td>
-      
-  
-  
-  
-      
-        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>42</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>WIP - Remove backup classes</td>
-      
-  
-  
-  
-      
-        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
-      
-  
-  
-  
-      
-        <td>pmcmaw</td>
-      
-  
-  
-  
-      
-        <td>36</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1425'>1425</a></td>
   
   
   
       
-        <td>7</td>
+        <td>8</td>
       
   
   
@@ -2168,7 +2180,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>7</td>
+        <td>8</td>
       
   
   
@@ -2181,6 +2193,146 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
+  
+  
+  
+      
+        <td>34</td>
+      
+  
+  
+  
+      
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>Deprecate unsupported Solaris platform</td>
+      
+  
+  
+  
+      
+        <td>Hi @ghoneycutt, @alexjfisher, I want to highlight here the difference between supported and compatible. As you said in a previous comment, solaris is not in the metadata.json file, so it's not supported by this module (it's not tested on solaris), but it might be compatible. Indeed , we had some private Jenkins based test frameworks, but still we didn't have tested against solaris and we don't have images for solaris in our nightlies/test PRs from GCP (what we currently use, we used Jenkins in the past). As a conclusion, solaris is not supported, but compatible (maybe) with this module, so, I'll say not to merge this PR, but @binford2k can have the final answer here.  </td>
+      
+  
+  
+  
+      
+        <td>daianamezdrea</td>
+      
+  
+  
+  
+      
+        <td>30</td>
+      
+  
+  
+  
+      
+        <td>5</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
+  
+  
+  
+      
+        <td>41</td>
+      
+  
+  
+  
+      
+        <td>tejasbhosale009</td>
+      
+  
+  
+  
+      
+        <td>(feat) allow to set and run backups using another user via cron</td>
+      
+  
+  
+  
+      
+        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>7</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
@@ -2208,7 +2360,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>166</td>
+        <td>167</td>
       
   
   
@@ -2238,7 +2390,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>148</td>
+        <td>149</td>
       
   
   
@@ -2273,12 +2425,83 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1279'>1279</a></td>
+  
+  
+  
+      
+        <td>59</td>
+      
+  
+  
+  
+      
+        <td>cocker-cc</td>
+      
+  
+  
+  
+      
+        <td>Use Puppet-Datatype Sensitive for Passwords</td>
+      
+  
+  
+  
+      
+        <td>@ekohl Now that the associated pr has been merged what are your thoughts on this?
+Everything LGTM but don't want to step on your toes since you've got an open comment on it.</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>9</td>
+      
+  
+  
+  
+      
+        <td>3</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1274'>1274</a></td>
   
   
   
       
-        <td>90</td>
+        <td>91</td>
       
   
   
@@ -2317,7 +2540,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>8</td>
+        <td>9</td>
       
   
   
@@ -2357,7 +2580,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>574</td>
+        <td>575</td>
       
   
   
@@ -2387,84 +2610,13 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>166</td>
+        <td>167</td>
       
   
   
   
       
         <td>10</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1279'>1279</a></td>
-  
-  
-  
-      
-        <td>58</td>
-      
-  
-  
-  
-      
-        <td>cocker-cc</td>
-      
-  
-  
-  
-      
-        <td>Use Puppet-Datatype Sensitive for Passwords</td>
-      
-  
-  
-  
-      
-        <td>@ekohl Now that the associated pr has been merged what are your thoughts on this?
-Everything LGTM but don't want to step on your toes since you've got an open comment on it.</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>3</td>
       
   
   
@@ -2498,7 +2650,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>104</td>
+        <td>105</td>
       
   
   
@@ -2568,7 +2720,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>71</td>
+        <td>72</td>
       
   
   
@@ -2598,7 +2750,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>71</td>
+        <td>72</td>
       
   
   
@@ -2638,7 +2790,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>19</td>
+        <td>20</td>
       
   
   
@@ -2672,7 +2824,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>0</td>
+        <td>1</td>
       
   
   
@@ -2712,7 +2864,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>126</td>
+        <td>127</td>
       
   
   
