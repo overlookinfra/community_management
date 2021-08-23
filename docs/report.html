@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>68</td>
+        <td>69</td>
       
   
   
@@ -234,7 +234,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>6</td>
+        <td>7</td>
       
   
   
@@ -274,7 +274,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>33</td>
+        <td>34</td>
       
   
   
@@ -306,7 +306,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>33</td>
+        <td>34</td>
       
   
   
@@ -346,7 +346,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>61</td>
+        <td>62</td>
       
   
   
@@ -560,7 +560,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>61</td>
+        <td>62</td>
       
   
   
@@ -595,12 +595,84 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+  
+  
+  
+      
+        <td>53</td>
+      
+  
+  
+  
+      
+        <td>storm49152</td>
+      
+  
+  
+  
+      
+        <td>Fetch correct _module_id value in apache::mod::php</td>
+      
+  
+  
+  
+      
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>48</td>
+      
+  
+  
+  
+      
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
   
   
   
       
-        <td>60</td>
+        <td>61</td>
       
   
   
@@ -645,85 +717,13 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>60</td>
+        <td>61</td>
       
   
   
   
       
         <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
-  
-  
-  
-      
-        <td>52</td>
-      
-  
-  
-  
-      
-        <td>storm49152</td>
-      
-  
-  
-  
-      
-        <td>Fetch correct _module_id value in apache::mod::php</td>
-      
-  
-  
-  
-      
-        <td>I think you're right. Here's the relevant code:
-https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
-It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
-      
-  
-  
-  
-      
-        <td>ekohl</td>
-      
-  
-  
-  
-      
-        <td>47</td>
-      
-  
-  
-  
-      
-        <td>4</td>
       
   
   
@@ -757,7 +757,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>6</td>
+        <td>7</td>
       
   
   
@@ -827,7 +827,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>158</td>
+        <td>159</td>
       
   
   
@@ -857,7 +857,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>131</td>
+        <td>132</td>
       
   
   
@@ -892,152 +892,12 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/137'>137</a></td>
-  
-  
-  
-      
-        <td>250</td>
-      
-  
-  
-  
-      
-        <td>treydock</td>
-      
-  
-  
-  
-      
-        <td>Add support for Helm v3 (continued)</td>
-      
-  
-  
-  
-      
-        <td>Please try this and let me know if it works, sorry for my late answer, I was trying to find a good solution for the problem and then I forgot about it, thank you!</td>
-      
-  
-  
-  
-      
-        <td>daianamezdrea</td>
-      
-  
-  
-  
-      
-        <td>69</td>
-      
-  
-  
-  
-      
-        <td>11</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
-  
-  
-  
-      
-        <td>273</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>Add ability to deploy helm v3</td>
-      
-  
-  
-  
-      
-        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>146</td>
-      
-  
-  
-  
-      
-        <td>9</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/159'>159</a></td>
   
   
   
       
-        <td>55</td>
+        <td>56</td>
       
   
   
@@ -1234,7 +1094,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>55</td>
+        <td>56</td>
       
   
   
@@ -1247,6 +1107,146 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
+  
+  
+  
+      
+        <td>274</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>Add ability to deploy helm v3</td>
+      
+  
+  
+  
+      
+        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>147</td>
+      
+  
+  
+  
+      
+        <td>9</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/137'>137</a></td>
+  
+  
+  
+      
+        <td>251</td>
+      
+  
+  
+  
+      
+        <td>treydock</td>
+      
+  
+  
+  
+      
+        <td>Add support for Helm v3 (continued)</td>
+      
+  
+  
+  
+      
+        <td>Please try this and let me know if it works, sorry for my late answer, I was trying to find a good solution for the problem and then I forgot about it, thank you!</td>
+      
+  
+  
+  
+      
+        <td>daianamezdrea</td>
+      
+  
+  
+  
+      
+        <td>70</td>
+      
+  
+  
+  
+      
+        <td>11</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
@@ -1274,7 +1274,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>26</td>
+        <td>27</td>
       
   
   
@@ -1304,7 +1304,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>26</td>
+        <td>27</td>
       
   
   
@@ -1344,7 +1344,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>23</td>
+        <td>24</td>
       
   
   
@@ -1374,7 +1374,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>23</td>
+        <td>24</td>
       
   
   
@@ -1414,7 +1414,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>44</td>
+        <td>45</td>
       
   
   
@@ -1444,7 +1444,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>12</td>
+        <td>13</td>
       
   
   
@@ -1484,7 +1484,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>11</td>
+        <td>12</td>
       
   
   
@@ -1583,7 +1583,7 @@ diff -wur templates/v1beta2/config_worker.yaml.erb templates/v1beta3/config_work
   
   
       
-        <td>11</td>
+        <td>12</td>
       
   
   
@@ -1618,12 +1618,82 @@ diff -wur templates/v1beta2/config_worker.yaml.erb templates/v1beta3/config_work
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1428'>1428</a></td>
+  
+  
+  
+      
+        <td>13</td>
+      
+  
+  
+  
+      
+        <td>fuyar</td>
+      
+  
+  
+  
+      
+        <td>Combine multiple grants into one while checking state</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>13</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1429'>1429</a></td>
   
   
   
       
-        <td>4</td>
+        <td>5</td>
       
   
   
@@ -1688,12 +1758,152 @@ diff -wur templates/v1beta2/config_worker.yaml.erb templates/v1beta3/config_work
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
+  
+  
+  
+      
+        <td>55</td>
+      
+  
+  
+  
+      
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>WIP - Remove backup classes</td>
+      
+  
+  
+  
+      
+        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
+      
+  
+  
+  
+      
+        <td>pmcmaw</td>
+      
+  
+  
+  
+      
+        <td>49</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
+  
+  
+  
+      
+        <td>53</td>
+      
+  
+  
+  
+      
+        <td>tejasbhosale009</td>
+      
+  
+  
+  
+      
+        <td>(feat) allow to set and run backups using another user via cron</td>
+      
+  
+  
+  
+      
+        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>14</td>
+      
+  
+  
+  
+      
+        <td>7</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
   
   
   
       
-        <td>157</td>
+        <td>158</td>
       
   
   
@@ -1724,7 +1934,7 @@ Thanks</td>
   
   
       
-        <td>30</td>
+        <td>31</td>
       
   
   
@@ -1759,60 +1969,60 @@ Thanks</td>
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1428'>1428</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
   
   
   
       
-        <td>12</td>
-      
-  
-  
-  
-      
-        <td>fuyar</td>
+        <td>46</td>
       
   
   
   
       
-        <td>Combine multiple grants into one while checking state</td>
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
       
   
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) All committers have signed the CLA.</td>
+        <td>Deprecate unsupported Solaris platform</td>
       
   
   
   
       
-        <td>CLAassistant</td>
+        <td>Hi @ghoneycutt, @alexjfisher, I want to highlight here the difference between supported and compatible. As you said in a previous comment, solaris is not in the metadata.json file, so it's not supported by this module (it's not tested on solaris), but it might be compatible. Indeed , we had some private Jenkins based test frameworks, but still we didn't have tested against solaris and we don't have images for solaris in our nightlies/test PRs from GCP (what we currently use, we used Jenkins in the past). As a conclusion, solaris is not supported, but compatible (maybe) with this module, so, I'll say not to merge this PR, but @binford2k can have the final answer here.  </td>
       
   
   
   
       
-        <td>12</td>
+        <td>daianamezdrea</td>
       
   
   
   
       
-        <td>1</td>
+        <td>42</td>
       
   
   
   
       
-        <td>true</td>
+        <td>5</td>
       
   
   
   
       
         <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
       
   
   
@@ -1834,7 +2044,7 @@ Thanks</td>
   
   
       
-        <td>19</td>
+        <td>20</td>
       
   
   
@@ -2025,7 +2235,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>19</td>
+        <td>20</td>
       
   
   
@@ -2038,216 +2248,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
-  
-  
-  
-      
-        <td>52</td>
-      
-  
-  
-  
-      
-        <td>tejasbhosale009</td>
-      
-  
-  
-  
-      
-        <td>(feat) allow to set and run backups using another user via cron</td>
-      
-  
-  
-  
-      
-        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>13</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
-  
-  
-  
-      
-        <td>45</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>Deprecate unsupported Solaris platform</td>
-      
-  
-  
-  
-      
-        <td>Hi @ghoneycutt, @alexjfisher, I want to highlight here the difference between supported and compatible. As you said in a previous comment, solaris is not in the metadata.json file, so it's not supported by this module (it's not tested on solaris), but it might be compatible. Indeed , we had some private Jenkins based test frameworks, but still we didn't have tested against solaris and we don't have images for solaris in our nightlies/test PRs from GCP (what we currently use, we used Jenkins in the past). As a conclusion, solaris is not supported, but compatible (maybe) with this module, so, I'll say not to merge this PR, but @binford2k can have the final answer here.  </td>
-      
-  
-  
-  
-      
-        <td>daianamezdrea</td>
-      
-  
-  
-  
-      
-        <td>41</td>
-      
-  
-  
-  
-      
-        <td>5</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>54</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>WIP - Remove backup classes</td>
-      
-  
-  
-  
-      
-        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
-      
-  
-  
-  
-      
-        <td>pmcmaw</td>
-      
-  
-  
-  
-      
-        <td>48</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>false</td>
       
   
   
@@ -2275,7 +2275,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>178</td>
+        <td>179</td>
       
   
   
@@ -2305,7 +2305,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>160</td>
+        <td>161</td>
       
   
   
@@ -2340,12 +2340,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1290'>1290</a></td>
+  
+  
+  
+      
+        <td>11</td>
+      
+  
+  
+  
+      
+        <td>evgeni</td>
+      
+  
+  
+  
+      
+        <td>drop code for Debian 6/7 and Ubuntu 10.04/12.04</td>
+      
+  
+  
+  
+      
+        <td>https://github.com/puppetlabs/puppetlabs-postgresql/pull/1288 should add D11, but there's some CI issue.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>6</td>
+      
+  
+  
+  
+      
+        <td>8</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1274'>1274</a></td>
   
   
   
       
-        <td>102</td>
+        <td>103</td>
       
   
   
@@ -2384,7 +2454,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>20</td>
+        <td>21</td>
       
   
   
@@ -2419,7 +2489,43 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1290'>1290</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1132'>1132</a></td>
+  
+  
+  
+      
+        <td>587</td>
+      
+  
+  
+  
+      
+        <td>Bouke</td>
+      
+  
+  
+  
+      
+        <td>Don't update password encrypted with SCRAM-SHA-256 if not changed</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-postgresql?pullRequest=1132) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-postgresql?pullRequest=1132) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-postgresql?pullRequest=1132) it.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>179</td>
+      
   
   
   
@@ -2430,43 +2536,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>evgeni</td>
-      
-  
-  
-  
-      
-        <td>drop code for Debian 6/7 and Ubuntu 10.04/12.04</td>
-      
-  
-  
-  
-      
-        <td>https://github.com/puppetlabs/puppetlabs-postgresql/pull/1288 should add D11, but there's some CI issue.</td>
-      
-  
-  
-  
-      
-        <td>ekohl</td>
-      
-  
-  
-  
-      
-        <td>5</td>
-      
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>true</td>
+        <td>false</td>
       
   
   
@@ -2494,7 +2564,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>70</td>
+        <td>71</td>
       
   
   
@@ -2525,83 +2595,13 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>20</td>
+        <td>21</td>
       
   
   
   
       
         <td>3</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1132'>1132</a></td>
-  
-  
-  
-      
-        <td>586</td>
-      
-  
-  
-  
-      
-        <td>Bouke</td>
-      
-  
-  
-  
-      
-        <td>Don't update password encrypted with SCRAM-SHA-256 if not changed</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-postgresql?pullRequest=1132) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-postgresql?pullRequest=1132) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-postgresql?pullRequest=1132) it.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>178</td>
-      
-  
-  
-  
-      
-        <td>10</td>
       
   
   
@@ -2635,7 +2635,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>1</td>
+        <td>2</td>
       
   
   
@@ -2705,7 +2705,7 @@ Everything LGTM but don't want to step on your toes since you've got an open com
   
   
       
-        <td>2</td>
+        <td>3</td>
       
   
   
@@ -2749,7 +2749,7 @@ Unfortunately, it doesn't look like there's currently an easier way to produce a
   
   
       
-        <td>2</td>
+        <td>3</td>
       
   
   
@@ -2789,7 +2789,7 @@ Unfortunately, it doesn't look like there's currently an easier way to produce a
   
   
       
-        <td>116</td>
+        <td>117</td>
       
   
   
@@ -2859,7 +2859,7 @@ Unfortunately, it doesn't look like there's currently an easier way to produce a
   
   
       
-        <td>83</td>
+        <td>84</td>
       
   
   
@@ -2889,7 +2889,7 @@ Unfortunately, it doesn't look like there's currently an easier way to produce a
   
   
       
-        <td>83</td>
+        <td>84</td>
       
   
   
@@ -2924,88 +2924,12 @@ Unfortunately, it doesn't look like there's currently an easier way to produce a
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1195'>1195</a></td>
-  
-  
-  
-      
-        <td>31</td>
-      
-  
-  
-  
-      
-        <td>valleedelisle</td>
-      
-  
-  
-  
-      
-        <td>(MODULES-11126) Replacing URI.escape with URI::DEFAULT_PARSER</td>
-      
-  
-  
-  
-      
-        <td>@b4ldr
-
-Any other feedback?
-
-Thanks,
-
-DVD</td>
-      
-  
-  
-  
-      
-        <td>valleedelisle</td>
-      
-  
-  
-  
-      
-        <td>4</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1200'>1200</a></td>
   
   
   
       
-        <td>5</td>
+        <td>6</td>
       
   
   
@@ -3057,13 +2981,89 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>5</td>
+        <td>6</td>
       
   
   
   
       
         <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1195'>1195</a></td>
+  
+  
+  
+      
+        <td>32</td>
+      
+  
+  
+  
+      
+        <td>valleedelisle</td>
+      
+  
+  
+  
+      
+        <td>(MODULES-11126) Replacing URI.escape with URI::DEFAULT_PARSER</td>
+      
+  
+  
+  
+      
+        <td>@b4ldr
+
+Any other feedback?
+
+Thanks,
+
+DVD</td>
+      
+  
+  
+  
+      
+        <td>valleedelisle</td>
+      
+  
+  
+  
+      
+        <td>5</td>
+      
+  
+  
+  
+      
+        <td>7</td>
       
   
   
@@ -3097,7 +3097,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>138</td>
+        <td>139</td>
       
   
   
