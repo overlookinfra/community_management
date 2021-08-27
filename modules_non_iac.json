@@ -1,0 +1,21 @@
+[{
+        "github_namespace": "puppetlabs",
+        "module_name": "puppet_metrics_dashboard",
+        "owner": "Adrian",
+        "email": "sensei.loafage@gmail.com"
+    },
+    {
+
+        "github_namespace": "puppetlabs",
+        "module_name": "puppetlabs-peadm",
+        "owner": "Dimitri Tischenko",
+        "email": "dimitri@puppet.com"
+    },
+    {
+        "github_namespace": "puppetlabs",
+        "module_name": "puppetlabs-pe_databases",
+        "owner": "Adrian",
+        "email": "sensei.loafage@gmail.com"
+
+    }
+]

@@ -1,0 +1,82 @@
+<html>
+<title>Github Action Nightly Report</title>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+  <script src='./web_libraries/sorttable.js'></script>
+  <link rel='stylesheet' href='./web_libraries/bootstrap.min.css'>
+  <script src='./web_libraries/DataTables/datatables.js'></script>
+  <link rel='stylesheet' href='./web_libraries/DataTables/datatables.css'>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="github_action_report_non_iac.js"></script>   
+</head>
+<body>
+<h1 style="text-align:center;">Github Actions Nightly Report for non IAC modules</h1>
+<input type="text" id="inputSearch" onkeyup="searchFunction()" placeholder="Search for names.." title="Type in a name">
+<div style="overflow-x:auto;">
+    <table id="principalTable" >
+        <thead>
+        <tr>
+            <th> Module:</th>
+          
+            <% result_hash[0][:runs][0..6].each do |run| %>
+            <th> <%= run[:updated_at] %></th>
+            <% end %>        
+        </tr>
+        </thead>
+        <tbody>
+​
+            <% result_hash.each do |m| %>
+                <tbody class="labels">
+                <tr>
+                <td rowspan="2" style="background-color:#FFA500"><a href='<%= m[:url] %>' target="_blank"><%= m[:name] %></a></td>
+                    <% m[:runs][0..4].each do |run| %>
+                    <td width="20%"> 
+                    <% if run[:general_conclusion] %>
+                    <input type="button" class="btn1 btn-1" name="<%= run[:run_id] %>" onclick="toggle('<%= run[:run_id] %>')  ">
+                    <% else %>
+                      <input type="button" class="btn2 btn-2" name="<%= run[:run_id] %>" onclick="toggle('<%= run[:run_id] %>')  ">
+                    <% end %>
+​
+                        <label for="<%= run[:run_number] %>">
+                            <button type="button" class="button1" data-toggle="tooltip" data-placement="top"
+                                    title='<%= run[:updated_at] %>'>
+                                <a href='<%= run[:html_url] %>'target="_blank"><%= run[:run_number] %></a>
+                            </button>
+                        </label>
+                       
+                         
+                    </td>
+                    <% end %>
+                </tr>
+​
+                <tr>
+                     <% m[:runs][0..4].each do |run| %>
+                          <td >
+                            <table style="display: none" id="<%= run[:run_id]%>">
+                              <tr>
+                                <td>
+                                  <b> Agent - OS:</b>
+                                </td>
+                              </tr>
+                              <% run[:os_agent].each do |acceptance| %>
+                                <tr>
+                                  <td bgcolor="<%= acceptance[:result] == 'success' ? 'white' : 'red' %>">
+                                 <a href="<%= "#{acceptance[:url]}" %>" target="_blank" ><%= "#{acceptance[:agent]} - #{acceptance[:os]}" %></a>
+                                  </td>
+                                </tr>
+                              <% end %>
+                            </table>
+                          </td>
+                     <% end %>
+                </tr>
+                
+                </tbody>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
