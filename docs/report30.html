@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>37</td>
+        <td>38</td>
       
   
   
@@ -276,7 +276,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>56</td>
+        <td>57</td>
       
   
   
@@ -308,7 +308,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>51</td>
+        <td>52</td>
       
   
   
@@ -335,7 +335,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   <tr>
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-inifile'>puppetlabs-inifile</a></td>
   
   
   
@@ -343,209 +343,42 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/159'>159</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-inifile/pull/457'>457</a></td>
   
   
   
       
-        <td>59</td>
-      
-  
-  
-  
-      
-        <td>daianamezdrea <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+        <td>31</td>
       
   
   
   
       
-        <td>[TEST] - Test helm v3</td>
+        <td>tja523</td>
       
   
   
   
       
-        <td>[helm_chart_update_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_chart_update_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_create_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_create_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_delete_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_delete_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_install_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_install_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_ls_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_ls_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_package_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_package_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_repo_add_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_repo_add_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_repo_remove_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_repo_remove_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm_repo_update_flags](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/lib/puppet/parser/functions/helm_repo_update_flags.rb) is a _function_
-----------------------------------
-
-
-
-
-  Breaking changes to this file MAY impact these 1 modules (near match):
-
-* [puppetlabs-helm](https://github.com/puppetlabs/puppetlabs-helm)
-
-
-[helm::chart](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/chart.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm::chart_update](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/chart_update.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm::create](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/create.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/init.pp) is a _class_
-----------------------------------
-
-
-
-  Breaking changes to this file WILL impact these 1 modules (exact match):
-
-* [aursu-kubeinstall](https://github.com/aursu/puppet-kubeinstall.git)
-
-
-
-[helm::package](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/package.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm::params](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/params.pp) is a _class_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm::repo](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/repo.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[helm::repo_update](https://github.com/puppetlabs/puppetlabs-helm/blob/2e3184cec904a7a951453d8dc0c297503d2940e2/manifests/repo_update.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-
-#### This module is declared in 0 of 576 indexed public `Puppetfiles`.
-
----------------------------------
-
-These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
-
-Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
-</td>
+        <td>match section names containing prefix character (normally [)</td>
       
   
   
   
       
-        <td>puppet-community-rangefinder[bot]</td>
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-inifile?pullRequest=457) All committers have signed the CLA.</td>
       
   
   
   
       
-        <td>59</td>
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>31</td>
       
   
   
@@ -580,12 +413,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
+  
+  
+  
+      
+        <td>59</td>
+      
+  
+  
+  
+      
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>WIP - Remove backup classes</td>
+      
+  
+  
+  
+      
+        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
+      
+  
+  
+  
+      
+        <td>pmcmaw</td>
+      
+  
+  
+  
+      
+        <td>53</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
   
   
   
       
-        <td>161</td>
+        <td>162</td>
       
   
   
@@ -616,83 +519,13 @@ Thanks</td>
   
   
       
-        <td>34</td>
+        <td>35</td>
       
   
   
   
       
         <td>4</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>58</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>WIP - Remove backup classes</td>
-      
-  
-  
-  
-      
-        <td>We are currently planning work on doing a complete revamp of backups as soon as the team get a chance. See epic here: https://tickets.puppetlabs.com/browse/IAC-1661</td>
-      
-  
-  
-  
-      
-        <td>pmcmaw</td>
-      
-  
-  
-  
-      
-        <td>52</td>
-      
-  
-  
-  
-      
-        <td>1</td>
       
   
   
@@ -726,7 +559,7 @@ Thanks</td>
   
   
       
-        <td>49</td>
+        <td>50</td>
       
   
   
@@ -756,7 +589,7 @@ Thanks</td>
   
   
       
-        <td>45</td>
+        <td>46</td>
       
   
   
