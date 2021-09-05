@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>73</td>
+        <td>75</td>
       
   
   
@@ -418,13 +418,85 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>73</td>
+        <td>75</td>
       
   
   
   
       
         <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+  
+  
+  
+      
+        <td>66</td>
+      
+  
+  
+  
+      
+        <td>storm49152</td>
+      
+  
+  
+  
+      
+        <td>Fetch correct _module_id value in apache::mod::php</td>
+      
+  
+  
+  
+      
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>61</td>
+      
+  
+  
+  
+      
+        <td>4</td>
       
   
   
@@ -458,7 +530,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>67</td>
+        <td>69</td>
       
   
   
@@ -655,7 +727,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>67</td>
+        <td>69</td>
       
   
   
@@ -695,7 +767,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>262</td>
+        <td>264</td>
       
   
   
@@ -725,7 +797,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>81</td>
+        <td>83</td>
       
   
   
