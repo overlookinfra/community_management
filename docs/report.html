@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>85</td>
+        <td>86</td>
       
   
   
@@ -240,7 +240,7 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
       
-        <td>6</td>
+        <td>7</td>
       
   
   
@@ -259,78 +259,6 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
       
         <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2169'>2169</a></td>
-  
-  
-  
-      
-        <td>50</td>
-      
-  
-  
-  
-      
-        <td>wbclark</td>
-      
-  
-  
-  
-      
-        <td>Add an apache::vhost::proxy define</td>
-      
-  
-  
-  
-      
-        <td>Discussed with @ekohl and agreed to take over https://github.com/puppetlabs/puppetlabs-apache/pull/2167
-
-This PR therefore contains my latest work on it to get the tests into a working state.</td>
-      
-  
-  
-  
-      
-        <td>wbclark</td>
-      
-  
-  
-  
-      
-        <td>50</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
       
   
   
@@ -352,7 +280,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>78</td>
+        <td>79</td>
       
   
   
@@ -566,13 +494,227 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>78</td>
+        <td>79</td>
       
   
   
   
       
         <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2169'>2169</a></td>
+  
+  
+  
+      
+        <td>51</td>
+      
+  
+  
+  
+      
+        <td>wbclark</td>
+      
+  
+  
+  
+      
+        <td>Add an apache::vhost::proxy define</td>
+      
+  
+  
+  
+      
+        <td>Discussed with @ekohl and agreed to take over https://github.com/puppetlabs/puppetlabs-apache/pull/2167
+
+This PR therefore contains my latest work on it to get the tests into a working state.</td>
+      
+  
+  
+  
+      
+        <td>wbclark</td>
+      
+  
+  
+  
+      
+        <td>51</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2191'>2191</a></td>
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>aba-rechsteiner</td>
+      
+  
+  
+  
+      
+        <td>add double quote on scope parameter</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-apache?pullRequest=2191) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+  
+  
+  
+      
+        <td>70</td>
+      
+  
+  
+  
+      
+        <td>storm49152</td>
+      
+  
+  
+  
+      
+        <td>Fetch correct _module_id value in apache::mod::php</td>
+      
+  
+  
+  
+      
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>65</td>
+      
+  
+  
+  
+      
+        <td>4</td>
       
   
   
@@ -606,7 +748,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>77</td>
+        <td>79</td>
       
   
   
@@ -637,7 +779,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>16</td>
+        <td>17</td>
       
   
   
@@ -672,84 +814,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
-  
-  
-  
-      
-        <td>69</td>
-      
-  
-  
-  
-      
-        <td>storm49152</td>
-      
-  
-  
-  
-      
-        <td>Fetch correct _module_id value in apache::mod::php</td>
-      
-  
-  
-  
-      
-        <td>I think you're right. Here's the relevant code:
-https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
-It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
-      
-  
-  
-  
-      
-        <td>ekohl</td>
-      
-  
-  
-  
-      
-        <td>64</td>
-      
-  
-  
-  
-      
-        <td>4</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2189'>2189</a></td>
   
   
   
       
-        <td>6</td>
+        <td>7</td>
       
   
   
@@ -780,7 +850,7 @@ But it will definitely break existing users. We need to inform community in adva
   
   
       
-        <td>2</td>
+        <td>3</td>
       
   
   
@@ -815,85 +885,12 @@ But it will definitely break existing users. We need to inform community in adva
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt/pull/999'>999</a></td>
-  
-  
-  
-      
-        <td>14</td>
-      
-  
-  
-  
-      
-        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
-      
-  
-  
-  
-      
-        <td>(maint) Set DEBIAN_FRONTEND=noninteractive on upgrade</td>
-      
-  
-  
-  
-      
-        <td>Hi @daianamezdrea.  I just discussed the topic with a friend: `--force-yes` seems to be deprecated: it is not documented in recent versions of dpkg(1).  He confirmed `--force-confdef` and `--force-confold` are the way to go:
-
-* If a configuration file shipped by an older package has not been modified, it is probably not managed by Puppet and it makes sense to continue to use the (updated) default configuration which ship with the updated package;
-* If a configuration file shipped by an older package has been modified, it may be managed by Puppet which will revert any change, or not be managed by Puppet and the user probably does not want to loose her configuration.</td>
-      
-  
-  
-  
-      
-        <td>smortex</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>4</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt'>puppetlabs-apt</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt/pull/1007'>1007</a></td>
   
   
   
       
-        <td>13</td>
+        <td>15</td>
       
   
   
@@ -1230,7 +1227,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>13</td>
+        <td>15</td>
       
   
   
@@ -1257,6 +1254,79 @@ Exact matches are those that we can positively identify via namespace and the de
   <tr>
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt'>puppetlabs-apt</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt/pull/999'>999</a></td>
+  
+  
+  
+      
+        <td>16</td>
+      
+  
+  
+  
+      
+        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+      
+  
+  
+  
+      
+        <td>(maint) Set DEBIAN_FRONTEND=noninteractive on upgrade</td>
+      
+  
+  
+  
+      
+        <td>Hi @daianamezdrea.  I just discussed the topic with a friend: `--force-yes` seems to be deprecated: it is not documented in recent versions of dpkg(1).  He confirmed `--force-confdef` and `--force-confold` are the way to go:
+
+* If a configuration file shipped by an older package has not been modified, it is probably not managed by Puppet and it makes sense to continue to use the (updated) default configuration which ship with the updated package;
+* If a configuration file shipped by an older package has been modified, it may be managed by Puppet which will revert any change, or not be managed by Puppet and the user probably does not want to loose her configuration.</td>
+      
+  
+  
+  
+      
+        <td>smortex</td>
+      
+  
+  
+  
+      
+        <td>3</td>
+      
+  
+  
+  
+      
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-chocolatey'>puppetlabs-chocolatey</a></td>
   
   
@@ -1270,7 +1340,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>6</td>
+        <td>7</td>
       
   
   
@@ -1300,168 +1370,25 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-docker'>puppetlabs-docker</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-docker/pull/773'>773</a></td>
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
-      
-  
-  
-  
-      
-        <td>Fix facts gathering</td>
-      
-  
-  
-  
-      
-        <td>0 comments</td>
-      
-  
-  
-  
-      
-        <td></td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-docker'>puppetlabs-docker</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-docker/pull/770'>770</a></td>
-  
-  
-  
-      
-        <td>12</td>
-      
-  
-  
-  
-      
-        <td>johanfleury</td>
-      
-  
-  
-  
-      
-        <td>Check that docker_version is not nil before using it</td>
-      
-  
-  
-  
-      
-        <td>Hey @johanfleury, there seem to be some rubocop offenses. Could you please run `rubocop -a` and commit again in order to have spec tests green.
-
-kind regards,
-@adrianiurca </td>
-      
-  
-  
-  
-      
-        <td>adrianiurca</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
         <td>3</td>
       
   
   
   
       
+        <td>2</td>
+      
+  
+  
+  
+      
         <td>false</td>
       
   
   
   
       
-        <td>true</td>
+        <td>false</td>
       
   
   
@@ -1483,7 +1410,7 @@ kind regards,
   
   
       
-        <td>1</td>
+        <td>3</td>
       
   
   
@@ -1513,13 +1440,439 @@ kind regards,
   
   
       
-        <td>1</td>
+        <td>3</td>
       
   
   
   
       
         <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1014'>1014</a></td>
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>adrianiurca <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+      
+  
+  
+  
+      
+        <td>Add carp protocol to :proto property</td>
+      
+  
+  
+  
+      
+        <td>[firewall](https://github.com/puppetlabs/puppetlabs-firewall/blob/e0794453e0768d77f055e7eda9da8cd9ef79811f/lib/puppet/type/firewall.rb) is a _type_
+----------------------------------
+
+
+
+  Breaking changes to this file WILL impact these 121 modules (exact match):
+
+* [echoes-echoes_firewall](https://github.com/echoes-tech/puppet-echoes_firewall)
+* [binarin-binarin](https://forge.puppet.com/binarin/binarin)
+* [gnubilafrance-nfs](https://github.com/gnubila-france/puppet-nfs)
+* [abiquo-abiquo](https://github.com/chirauki/abiquo-abiquo.git)
+* [sat6qe-katellovirt](https://github.com/SatelliteQE/katellovirt)
+* [tomkrieger-security_baseline](https://git.home.tom-krieger.de/puppet-modules/security_baseline.git)
+* [karume-openstack](https://github.com/karume/puppetlabs-openstack.git)
+* [narasimhasv-openstack](https://forge.puppet.com/narasimhasv/openstack)
+* [openstack-pacemaker](https://github.com/redhat-openstack/puppet-pacemaker.git)
+* [andrewkroh-base_firewall](https://github.com/andrewkroh/puppet-base_firewall)
+* [aco-tomcat](https://github.com/antoineco/aco-tomcat.git)
+* [puppetfinland-packetfilter](https://github.com/Puppet-Finland/puppet-packetfilter.git)
+* [puppetlabs-openstack](https://github.com/puppetlabs/puppetlabs-openstack.git)
+* [hesco-weave](https://github.com/hesco/hesco-weave)
+* [thias-rhel](https://github.com/thias/puppet-rhel)
+* [geoffwilliams-r_profile](https://github.com/GeoffWilliams/r_profile)
+* [jmkeyes-gocd](https://github.com/jmkeyes/puppet-gocd)
+* [mvasilenko-gocd](https://github.com/mvasilenko/puppet-gocd)
+* [dhollinger-devopsdays](https://gitlab.com/moduletux/devopsdays.git)
+* [compass-rserve](https://github.com/ubc/puppet-rserve.git)
+* [jgazeley-monyog](https://github.com/djjudas21/puppet-monyog)
+* [eelcomaljaars-friendica](https://devtools.maljaars-it.nl/opensource/puppet-friendica.git)
+* [radez-pacemaker](https://github.com/radez/puppet-pacemaker)
+* [myoung34-mirthconnect](https://github.com/myoung34/puppet-mirthconnect)
+* [jgazeley-speedtest](https://github.com/djjudas21/puppet-speedtest)
+* [gabe-pe_razor_complete](https://github.com/fnaard/puppet-pe_razor_complete)
+* [compass-examdb](https://github.com/xcompass/puppet-examdb)
+* [inkling-postgresql](https://github.com/inkling/puppet-postgresql.git)
+* [thoherr-railsapp](https://github.com/42ways/puppet-railsapp.git)
+* [jlambert121-puppet](https://github.com/jlambert121/jlambert121-puppet)
+* [sjoeboo-puppet](https://github.com/sjoeboo/puppet-puppet)
+* [myoung34-marklogic](http://github.com/myoung34/puppet-marklogic)
+* [maxchk-varnish](https://forge.puppet.com/maxchk/varnish)
+* [42ways-railsapp](https://github.com/42ways/puppet-railsapp.git)
+* [echoes-monit](https://github.com/echoes-tech/puppet-monit)
+* [wdec-echoes_monit](https://github.com/wdec/wdec-echoes-monit/tree/add-ssl)
+* [wdec-monit](https://github.com/wdec/wdec-echoes-monit/tree/add-ssl)
+* [rendhalver-nrpe](https://forge.puppet.com/rendhalver/nrpe)
+* [abstractit-nrpe](https://github.com/abstractitptyltd/puppet-nrpe)
+* [tufin-secureapp](https://forge.puppet.com/tufin/secureapp)
+* [evenup-riakdev](https://github.com/evenup/evenup-riakdev)
+* [fraenki-galera](https://github.com/fraenki/puppet-galera)
+* [godp1301-postgresql](https://github.com/godp1301/puppetlabs-postgresql.git)
+* [soli-monit](https://github.com/solution-libre/puppet-monit)
+* [puppet-cassandra](https://github.com/voxpupuli/puppet-cassandra)
+* [themeier-ssh](https://github.com/themeier/puppet-module-ssh.git)
+* [enterprisemodules-ora_profile](https://github.com/enterprisemodules/ora_profile)
+* [evenup-puppet](https://github.com/evenup/evenup-puppet)
+* [pennycoders-marathon](https://github.com/pennycoders/puppet-marathon)
+* [pennycoders-zookeeper](https://github.com/pennycoders/puppet-zookeeper)
+* [alexharvey-firewall_multi](https://github.com/alexharv074/puppet-firewall_multi)
+* [olevole-ssh](https://github.com/olevole/puppet-module-ssh.git)
+* [ghoneycutt-ssh](https://github.com/ghoneycutt/puppet-module-ssh.git)
+* [locp-cassandra](https://github.com/locp/cassandra)
+* [Nextdoor-strongswan](https://github.com/Nextdoor/puppet-strongswan)
+* [glarizza-profiles](https://github.com/glarizza/puppet-profiles)
+* [pltraining-selfpaced](https://github.com/puppetlabs/pltraining-selfpaced)
+* [jgazeley-networker](https://github.com/uobnetops/puppet-networker)
+* [danfoster-networker](https://github.com/danfoster/puppet-networker)
+* [mdelaney-icecc](https://github.com/madelaney/puppet-icecc)
+* [myoung34-hbase](https://github.com/myoung34/puppet-hbase)
+* [puppetlabs-awsdemo_profiles](https://github.com/puppetlabs/puppetlabs-awsdemo_profiles)
+* [jgazeley-ekahau_throughput_server](https://github.com/djjudas21/puppet-ekahau_throughput_server)
+* [eschiller-trac](https://www.github.com/eschiller/puppet-trac)
+* [mtsinc1-trac](https://www.github.com/mtsinc1/puppet-trac)
+* [compass-learninglocker](https://github.com/ubc/puppet-learninglocker)
+* [jonnyx-samba](https://github.com/jonmosco/puppet-samba)
+* [glorpen-g_firewall](https://github.com/glorpen/puppet-g_firewall.git)
+* [pmuller-aws_firewall](https://github.com/pmuller/puppet-aws_firewall)
+* [jethrocarr-timemachine](https://github.com/jethrocarr/puppet-timemachine)
+* [ploperations-haproxy_consul](https://github.com/ploperations/ploperations-haproxy_consul.git)
+* [evenup-common](https://github.com/evenup/evenup-common)
+* [calmenergy-fail2ban](https://github.com/calmenergy/calmenergy-fail2ban)
+* [CERNOps-bdii](https://github.com/cernops/puppet-bdii)
+* [cnafsd-bdii](https://github.com/italiangrid/puppet-bdii)
+* [olevole-memcached](https://github.com/olevole/puppet-memcached.git)
+* [puppetfinland-puppetmaster](https://github.com/Puppet-Finland/puppet-puppetmaster)
+* [jgazeley-freeradius](https://github.com/djjudas21/puppet-freeradius)
+* [puppet-smokeping](https://github.com/voxpupuli/puppet-smokeping.git)
+* [puppetlabs-puppetdb](https://github.com/puppetlabs/puppetlabs-puppetdb.git)
+* [pennycoders-mesos](https://github.com/pennycoders/puppet-mesos)
+* [puppetlabs-wordpress_app](https://github.com/puppetlabs/puppetlabs-wordpress_app)
+* [cloudscaling-scaleio](https://github.com/codedellemc/puppet-scaleio)
+* [saz-memcached](https://github.com/saz/puppet-memcached.git)
+* [SchnWalter-happydev](https://github.com/devgateway/happy-deployer/tree/master/puppet/modules/happydev)
+* [wazuh-wazuh](https://github.com/wazuh/wazuh-puppet)
+* [echoes-strongswan](https://forge.puppet.com/echoes/strongswan)
+* [dhogland-splunk](https://forge.puppet.com/dhogland/splunk)
+* [bashtoni-masq](https://github.com/BashtonLtd/puppet-masq)
+* [treydock-slurm](https://github.com/treydock/puppet-slurm)
+* [jethrocarr-roadwarrior](https://github.com/jethrocarr/puppet-roadwarrior)
+* [tedivm-psad](https://github.com/tedivm/puppet-psad.git)
+* [enterprisemodules-ora_rac](http:/www.github.com/enterprisemodules/ora_rac)
+* [puppet-zabbix](https://github.com/voxpupuli/puppet-zabbix.git)
+* [maany-simple_grid](https://github.com/WLCG-Lightweight-Sites/simple_grid_puppet_module)
+* [wdijkerman-zabbix](https://github.com/dj-wasabi/puppet-zabbix.git)
+* [danfoster-sitefirewall](http://github.com/danfoster/puppet-sitefirewall)
+* [maxadamo-zfs_nas](https://github.com/maxadamo/zfs_nas)
+* [jgazeley-nagios](https://github.com/djjudas21/puppet-nagios)
+* [maxadamo-tiny_nas](https://github.com/maxadamo/tiny_nas)
+* [jamesread-commonlinuxstuff](https://github.com/jamesread/jamesread-commonlinuxstuff)
+* [treydock-globus](https://github.com/treydock/puppet-module-globus)
+* [railsdog-awsfirewall](https://github.com/railsdog/puppet-modules/awsfirewall)
+* [rogierslag-openswan](https://github.com/rogierslag/rogierslag-openvpn)
+* [oris-appserver](https://bitbucket.org/oris/env-puppet-module-appserver)
+* [huit-ipa](https://forge.puppet.com/huit/ipa)
+* [mikegleasonjr-server](https://github.com/mikegleasonjr/puppet-server.git)
+* [tscopp-jss](https://github.com/tscopp/puppet-jss/issues)
+* [stesie-gluon](https://github.com/ffansbach/gluon-puppet)
+* [tracywebtech-dofirewall](https://github.com/TracyWebTech/puppet-dofirewall)
+* [maxadamo-galera_maxscale](https://github.com/maxadamo/galera_maxscale)
+* [tomkrieger-remediate_install](https://github.com/tom-krieger/remediate_install.git)
+* [shearn89-toughen](https://github.com/shearn89/puppet-toughen)
+* [seteam-role](https://github.com/puppetlabs-seteam/puppet-module-role.git)
+* [ffquintella-firewallmanager](https://github.com/ffquintella/puppet-firewallManager.git)
+* [puppetlabs-pam_firewall](https://github.com/puppetlabs/puppetlabs-pam_firewall)
+* [emccode-scaleio](https://github.com/emccode/puppet-scaleio)
+* [praekeltfoundation-docker_firewall](http://github.com/praekeltfoundation/puppet-docker_firewall)
+* [maxadamo-galera_proxysql](https://gitlab.com/maxadamo/galera_proxysql)
+* [treydock-osg](https://github.com/treydock/puppet-osg.git)
+* [treydock-gpfs](https://github.com/treydock/puppet-module-gpfs)
+
+
+
+  Breaking changes to this file MAY impact these 143 modules (near match):
+
+* [seteam-profile](https://github.com/puppetlabs-seteam/puppet-module-profile.git)
+* [counsyl-sys](https://github.com/counsyl/puppet-sys.git)
+* [dbsrinivasulu-mediawiki](https://forge.puppet.com/dbsrinivasulu/mediawiki)
+* [parthitraining-mediawiki](https://github.com)
+* [byjupv-mediakwiki](https://forge.puppet.com/byjupv/mediakwiki)
+* [niksv-mediawiki](https://forge.puppet.com/niksv/mediawiki)
+* [prakash007-mediawiki](https://forge.puppet.com/prakash007/mediawiki)
+* [kiranhosamani-mediawiki](https://forge.puppet.com/kiranhosamani/mediawiki)
+* [sunilh-mediawiki](https://forge.puppet.com/sunilh/mediawiki)
+* [abhaysoni-mediawiki](https://forge.puppet.com/abhaysoni/mediawiki)
+* [gsachar1-mediawiki](https://forge.puppet.com/gsachar1/mediawiki)
+* [narenv-mediawiki](https://forge.puppet.com/narenv/mediawiki)
+* [manish1984-mediawiki](https://forge.puppet.com/manish1984/mediawiki)
+* [pbhutani-mediawiki](https://forge.puppet.com/pbhutani/mediawiki)
+* [mithilas-mediawiki](http://forge.puppet.com)
+* [raviforge-mediawiki](https://forge.puppet.com/raviforge/mediawiki)
+* [preethi-mediawiki](https://forge.puppet.com)
+* [shantanumalik-mediawiki](https://forge.puppet.com/shantanumalik/mediawiki)
+* [webserve-mediawiki](https://forge.puppet.com/webserve/mediawiki)
+* [hegdec-mediawiki](https://forge.puppet.com/hegdec/mediawiki)
+* [pia-mediawiki](https://forge.puppet.com/pia/mediawiki)
+* [jaysingh-mediawiki](https://forge.puppet.com/jaysingh/mediawiki)
+* [vinaycharles-mediawiki](https://forge.puppet.com/vinaycharles/mediawiki)
+* [hemantgangwar-mediawiki](https://forge.puppet.com/hemantgangwar/mediawiki)
+* [suvarnagodri-mediawiki](https://forge.puppet.com/suvarnagodri/mediawiki)
+* [nitish741-mediawiki](https://www.google.com)
+* [anthomas-mediawiki](http://www.google.com)
+* [214310-mediawiki](https://forge.puppet.com/214310/mediawiki)
+* [dharknes-scst](https://forge.puppet.com/dharknes/scst)
+* [funaccount-mediawiki](http://fun.com/mediawiki)
+* [ravishankar1jan-mediawiki](https://forge.puppet.com/ravishankar1jan/mediawiki)
+* [jmkeyes-bind](https://github.com/jmkeyes/puppet-bind.git)
+* [gardouille-proxmox](https://git.101010.fr/puppet/proxmox)
+* [counsyl-redis](https://github.com/counsyl/puppet-redis.git)
+* [counsyl-memcached](https://github.com/counsyl/puppet-memcached.git)
+* [sathieu-c_icap](https://github.com/sathieu/puppet-c_icap)
+* [mmack-cfssl](https://github.com/michaelmack000/puppet-cfssl.git)
+* [vshn-uhosting](https://github.com/vshn/uhosting)
+* [maestrodev-avahi](http://github.com/maestrodev/puppet-avahi)
+* [netmanagers-dnsmasq](https://github.com/netmanagers/puppet-dnsmasq)
+* [netmanagers-nut](https://github.com/netmanagers/puppet-nut)
+* [puppetfinland-monit](https://github.com/Puppet-Finland/puppet-monit.git)
+* [rehan-samba](https://github.com/rehanone/puppet-samba.git)
+* [rehan-cfssl](https://github.com/rehanone/puppet-cfssl.git)
+* [rtyler-jenkins](https://github.com/jenkinsci/puppet-jenkins)
+* [puppet-jenkins](https://github.com/voxpupuli/puppet-jenkins)
+* [neillturner-teamcity](https://github.com/neillturner/puppet-teamcity.git)
+* [fuzeman-bind](https://github.com/netmanagers/puppet-bind)
+* [example42-tftp](https://github.com/example42/puppet-tftp)
+* [netmanagers-bind](https://github.com/netmanagers/puppet-bind)
+* [example42-openntpd](https://github.com/example42/puppet-openntpd)
+* [example42-orientdb](https://github.com/example42/puppet-orientdb)
+* [example42-redis](https://github.com/example42/puppet-redis)
+* [example42-xinetd](https://github.com/example42/puppet-xinetd)
+* [example42-monit](https://github.com/example42/puppet-monit)
+* [example42-mysql](https://github.com/example42/puppet-mysql)
+* [example42-nginx](https://github.com/netmanagers/puppet-nginx)
+* [concrete-nagios](https://github.com/concrete-cc/puppet-nagios)
+* [rehan-nginx](https://github.com/rehanone/puppet-nginx.git)
+* [Azcender-profile](https://github.com/azcender/profile)
+* [echoes-wrappers](https://github.com/echoes-tech/puppet-wrappers)
+* [soli-wrappers](https://github.com/solution-libre/puppet-wrappers)
+* [example42-libvirt](https://github.com/example42/puppet-libvirt)
+* [example42-proftpd](https://github.com/example42/puppet-proftpd)
+* [example42-openssh](https://github.com/example42/puppet-openssh)
+* [example42-jenkins](https://github.com/example42/puppet-jenkins)
+* [example42-freeradius](https://github.com/example42/puppet-freeradius)
+* [example42-sendmail](https://github.com/example42/puppet-sendmail)
+* [example42-newrelic](https://github.com/example42/puppet-newrelic)
+* [example42-lighttpd](https://github.com/example42/puppet-lighttpd)
+* [example42-heartbeat](https://github.com/example42/puppet-heartbeat)
+* [example42-rsync](https://github.com/example42/puppet-rsync)
+* [example42-vagrant](https://github.com/example42/puppet-vagrant)
+* [example42-munin](https://github.com/example42/puppet-munin)
+* [example42-jboss](https://github.com/example42/puppet-jboss)
+* [example42-clvm](https://github.com/example42/puppet-clvm)
+* [example42-sysklogd](https://github.com/example42/puppet-sysklogd)
+* [example42-rhcs](https://github.com/example42/puppet-rhcs)
+* [example42-multipath](https://github.com/example42/puppet-multipath)
+* [example42-vsftpd](https://github.com/example42/puppet-vsftpd)
+* [example42-puppetdashboard](https://github.com/example42/puppet-puppetdashboard)
+* [example42-autofs](https://github.com/example42/puppet-autofs)
+* [example42-mcollective](https://github.com/example42/puppet-mcollective)
+* [example42-foreman](https://github.com/example42/puppet-foreman)
+* [example42-splunk](https://github.com/example42/puppet-splunk)
+* [example42-snmpd](https://github.com/example42/puppet-snmpd)
+* [example42-dhcpd](https://github.com/example42/puppet-dhcpd)
+* [example42-ntp](https://github.com/example42/puppet-ntp)
+* [example42-nfs](https://github.com/example42/puppet-nfs)
+* [example42-graylog2](https://github.com/example42/puppet-graylog2)
+* [example42-samba](https://github.com/example42/puppet-samba)
+* [example42-logstash](https://github.com/example42/puppet-logstash)
+* [example42-rsyslog](https://github.com/example42/puppet-ryslog)
+* [example42-exim](https://github.com/example42/puppet-exim)
+* [example42-postgresql](https://github.com/example42/puppet-postgresql)
+* [example42-nrpe](https://github.com/example42/puppet-nrpe)
+* [example42-activemq](https://github.com/example42/puppet-activemq)
+* [example42-elasticsearch](https://github.com/example42/puppet-elasticsearch)
+* [example42-postfix](https://github.com/example42/puppet-postfix)
+* [example42-tomcat](https://github.com/example42/puppet-tomcat)
+* [esakazmi-mediawiki](https://forge.puppet.com/esakazmi/mediawiki)
+* [gururaj-mediawiki](https://forge.puppet.com/gururaj/mediawiki)
+* [jethrocarr-unifi_controller](https://github.com/jethrocarr/puppet-unifi_controller)
+* [intelliment-itlm](https://github.com/intelliment/puppet-integration)
+* [puppetfinland-gitdaemon](https://github.com/Puppet-Finland/puppet-gitdaemon.git)
+* [jgazeley-iperf](https://github.com/djjudas21/puppet-iperf)
+* [lcgdm-voms](https://github.com/cern-it-sdc-id/puppet-voms)
+* [example42-psick](https://github.com/example42/puppet-psick)
+* [devopera-docommon](https://github.com/devopera/puppet-docommon)
+* [jethrocarr-unifi_video](https://github.com/jethrocarr/puppet-unfi_video)
+* [puppetfinland-ntp](https://github.com/Puppet-Finland/puppet-ntp.git)
+* [puppetfinland-tinyproxy](https://github.com/Puppet-Finland/puppet-tinyproxy.git)
+* [puppetfinland-aptcacherng](https://github.com/Puppet-Finland/puppet-aptcacherng.git)
+* [puppetfinland-webserver](https://github.com/Puppet-Finland/puppet-webserver.git)
+* [puppetfinland-postfix](https://github.com/Puppet-Finland/puppet-postfix.git)
+* [puppetfinland-easy_ipa](https://github.com/Puppet-Finland/puppet-ipa)
+* [puppetfinland-sshd](https://github.com/Puppet-Finland/puppet-sshd.git)
+* [HEPPuppet-htcondor](https://github.com/HEP-Puppet)
+* [puppetfinland-mysql](https://github.com/Puppet-Finland/puppet-mysql.git)
+* [puppetfinland-snmpd](https://github.com/Puppet-Finland/puppet-snmpd.git)
+* [example42-resolver](https://github.com/example42/puppet-resolver)
+* [example42-tinc](https://github.com/example42/puppet-tinc)
+* [example42-dovecot](https://github.com/example42/puppet-dovecot)
+* [example42-puppetdb](https://github.com/example42/puppet-puppetdb)
+* [example42-puppet](https://github.com/example42/puppet-puppet)
+* [example42-apache](https://github.com/example42/puppet-apache)
+* [tedivm-hieratic](https://github.com/tedivm/puppet-hieratic)
+* [netmanagers-bareos](https://github.com/netmanagers/puppet-bareos)
+* [netmanagers-bacula](https://github.com/netmanagers/puppet-bacula)
+* [example42-openvpn](https://github.com/example42/puppet-openvpn)
+* [CERNOps-fts](https://github.com/cernops/puppet-fts)
+* [puppetfinland-znc](https://github.com/Puppet-Finland/puppet-znc.git)
+* [tykeal-gerrit](https://github.com/tykeal/puppet-gerrit.git)
+* [puppetfinland-dirsrv](https://github.com/Puppet-Finland/puppet-dirsrv.git)
+* [puppetfinland-buildbot](https://github.com/Puppet-Finland/puppet-buildbot.git)
+* [puppetfinland-bacula](https://github.com/Puppet-Finland/puppet-bacula.git)
+* [openstack-tripleo](https://github.com/openstack/puppet-tripleo.git)
+* [tscopp-bigfix](https://github.com/tscopp/bigfix)
+* [puppetfinland-openvpn](https://github.com/Puppet-Finland/puppet-openvpn.git)
+* [maestrodev-maestro_nodes](http://github.com/maestrodev/puppet-maestro_nodes)
+* [camptocamp-pacemaker](https://github.com/camptocamp/puppet-pacemaker)
+* [infnpd-creamce](https://github.com/italiangrid/puppet-creamce)
+* [autostructure-secure_linux_cis](https://github.com/autostructure/secure_linux_cis.git)
+
+
+
+#### This module is declared in 108 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
+      
+  
+  
+  
+      
+        <td>puppet-community-rangefinder[bot]</td>
+      
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
+  
+  
+  
+      
+        <td>176</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
+      
+  
+  
+  
+      
+        <td>Licensing folks have approved, reopening.</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>150</td>
+      
+  
+  
+  
+      
+        <td>4</td>
       
   
   
@@ -1553,7 +1906,7 @@ kind regards,
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
@@ -1598,83 +1951,13 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
   
       
         <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
-  
-  
-  
-      
-        <td>175</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
-      
-  
-  
-  
-      
-        <td>Licensing folks have approved, reopening.</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>148</td>
-      
-  
-  
-  
-      
-        <td>4</td>
       
   
   
@@ -1708,7 +1991,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>10</td>
+        <td>11</td>
       
   
   
@@ -1738,7 +2021,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>2</td>
+        <td>3</td>
       
   
   
@@ -1773,12 +2056,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
+  
+  
+  
+      
+        <td>292</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>Add ability to deploy helm v3</td>
+      
+  
+  
+  
+      
+        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>164</td>
+      
+  
+  
+  
+      
+        <td>9</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/161'>161</a></td>
   
   
   
       
-        <td>16</td>
+        <td>17</td>
       
   
   
@@ -1843,82 +2196,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
-  
-  
-  
-      
-        <td>290</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>Add ability to deploy helm v3</td>
-      
-  
-  
-  
-      
-        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>163</td>
-      
-  
-  
-  
-      
-        <td>9</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/159'>159</a></td>
   
   
   
       
-        <td>72</td>
+        <td>73</td>
       
   
   
@@ -2115,7 +2398,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>72</td>
+        <td>73</td>
       
   
   
@@ -2155,7 +2438,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>267</td>
+        <td>268</td>
       
   
   
@@ -2185,7 +2468,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>86</td>
+        <td>87</td>
       
   
   
@@ -2225,7 +2508,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>43</td>
+        <td>44</td>
       
   
   
@@ -2255,7 +2538,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>2</td>
+        <td>3</td>
       
   
   
@@ -2290,12 +2573,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java/pull/496'>496</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java/pull/497'>497</a></td>
   
   
   
       
-        <td>2</td>
+        <td>0</td>
       
   
   
@@ -2307,7 +2590,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>Release prep v7.1.3</td>
+        <td>Release prep v7.1.2</td>
       
   
   
@@ -2365,7 +2648,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>40</td>
+        <td>42</td>
       
   
   
@@ -2395,7 +2678,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>6</td>
+        <td>8</td>
       
   
   
@@ -2435,7 +2718,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>1</td>
+        <td>2</td>
       
   
   
@@ -2501,7 +2784,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>1</td>
+        <td>2</td>
       
   
   
@@ -2541,7 +2824,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>61</td>
+        <td>62</td>
       
   
   
@@ -2571,7 +2854,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>1</td>
+        <td>2</td>
       
   
   
@@ -2611,7 +2894,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>29</td>
+        <td>30</td>
       
   
   
@@ -2629,7 +2912,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1428) it.</td>
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1428) All committers have signed the CLA.</td>
       
   
   
@@ -2641,7 +2924,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>6</td>
+        <td>0</td>
       
   
   
@@ -2676,54 +2959,179 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1429'>1429</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1439'>1439</a></td>
   
   
   
       
-        <td>21</td>
-      
-  
-  
-  
-      
-        <td>andeman</td>
+        <td>0</td>
       
   
   
   
       
-        <td>fix Error: Transaction store file transactionstore.yaml is corrupt</td>
+        <td>ap-16</td>
       
   
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1429) All committers have signed the CLA.</td>
+        <td>Debian11 Bullseye config</td>
       
   
   
   
       
-        <td>CLAassistant</td>
+        <td>[mysql::bindings::python](https://github.com/puppetlabs/puppetlabs-mysql/blob/4e5434c3db4d816a7a50b74de58770ea32385eb5/manifests/bindings/python.pp) is a _class_
+----------------------------------
+
+
+
+  Breaking changes to this file WILL impact these 1 modules (exact match):
+
+* [treydock-xdmod](https://github.com/treydock/puppet-module-xdmod)
+
+
+
+  Breaking changes to this file MAY impact these 14 modules (near match):
+
+* [openstack-gnocchi](https://opendev.org/openstack/puppet-gnocchi.git)
+* [stackforge-heat](https://github.com/openstack/puppet-heat.git)
+* [stackforge-nova](https://github.com/openstack/puppet-nova.git)
+* [stackforge-ceilometer](https://github.com/openstack/puppet-ceilometer.git)
+* [stackforge-keystone](https://github.com/openstack/puppet-keystone.git)
+* [stackforge-glance](https://github.com/openstack/puppet-glance.git)
+* [jtopjian-havana](https://github.com/jtopjian/puppet-havana)
+* [stackforge-cinder](https://github.com/openstack/puppet-cinder.git)
+* [openstack-tuskar](https://github.com/openstack/puppet-tuskar.git)
+* [stackforge-neutron](https://github.com/openstack/puppet-neutron.git)
+* [narasimhasv-glance](https://forge.puppet.com/narasimhasv/glance)
+* [openstack-oslo](https://opendev.org/openstack/puppet-oslo.git)
+* [openstack-trove](https://opendev.org/openstack/puppet-trove.git)
+* [midonet-neutron](https://github.com/midonet/puppet-neutron.git)
+
+
+[mysql::params](https://github.com/puppetlabs/puppetlabs-mysql/blob/4e5434c3db4d816a7a50b74de58770ea32385eb5/manifests/params.pp) is a _class_
+----------------------------------
+
+
+
+  Breaking changes to this file WILL impact these 2 modules (exact match):
+
+* [edestecd-mariadb](https://github.com/edestecd/puppet-mariadb.git)
+* [brucem-ezpublish](https://github.com/brucem/puppet-ezpublish.git)
+
+
+
+  Breaking changes to this file MAY impact these 1 modules (near match):
+
+* [willdurand-bazinga](https://forge.puppet.com/willdurand/bazinga)
+
+
+
+#### This module is declared in 142 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
       
   
   
   
       
-        <td>6</td>
+        <td>puppet-community-rangefinder[bot]</td>
       
   
   
   
       
-        <td>1</td>
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>2</td>
       
   
   
   
       
         <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
+  
+  
+  
+      
+        <td>175</td>
+      
+  
+  
+  
+      
+        <td>fionera</td>
+      
+  
+  
+  
+      
+        <td>feat: Combine multiple grants into one while checking state</td>
+      
+  
+  
+  
+      
+        <td>Pinging @fionera, hopefully you can add a quick test to get this merged !
+Thanks</td>
+      
+  
+  
+  
+      
+        <td>fuyar</td>
+      
+  
+  
+  
+      
+        <td>48</td>
+      
+  
+  
+  
+      
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
@@ -2751,7 +3159,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
@@ -2806,7 +3214,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>14</td>
+        <td>15</td>
       
   
   
@@ -2841,171 +3249,30 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1429'>1429</a></td>
   
   
   
       
-        <td>174</td>
-      
-  
-  
-  
-      
-        <td>fionera</td>
+        <td>22</td>
       
   
   
   
       
-        <td>feat: Combine multiple grants into one while checking state</td>
+        <td>andeman</td>
       
   
   
   
       
-        <td>Pinging @fionera, hopefully you can add a quick test to get this merged !
-Thanks</td>
+        <td>fix Error: Transaction store file transactionstore.yaml is corrupt</td>
       
   
   
   
       
-        <td>fuyar</td>
-      
-  
-  
-  
-      
-        <td>47</td>
-      
-  
-  
-  
-      
-        <td>4</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
-  
-  
-  
-      
-        <td>69</td>
-      
-  
-  
-  
-      
-        <td>tejasbhosale009</td>
-      
-  
-  
-  
-      
-        <td>(feat) allow to set and run backups using another user via cron</td>
-      
-  
-  
-  
-      
-        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>30</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>71</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>WIP - Remove backup classes</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1429) All committers have signed the CLA.</td>
       
   
   
@@ -3017,19 +3284,19 @@ Thanks</td>
   
   
       
-        <td>6</td>
+        <td>8</td>
       
   
   
   
       
-        <td>2</td>
+        <td>1</td>
       
   
   
   
       
-        <td>false</td>
+        <td>true</td>
       
   
   
@@ -3057,7 +3324,7 @@ Thanks</td>
   
   
       
-        <td>36</td>
+        <td>37</td>
       
   
   
@@ -3248,7 +3515,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>36</td>
+        <td>37</td>
       
   
   
@@ -3283,12 +3550,152 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
+  
+  
+  
+      
+        <td>70</td>
+      
+  
+  
+  
+      
+        <td>tejasbhosale009</td>
+      
+  
+  
+  
+      
+        <td>(feat) allow to set and run backups using another user via cron</td>
+      
+  
+  
+  
+      
+        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>31</td>
+      
+  
+  
+  
+      
+        <td>7</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
+  
+  
+  
+      
+        <td>73</td>
+      
+  
+  
+  
+      
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>WIP - Remove backup classes</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>8</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
   
   
   
       
-        <td>62</td>
+        <td>63</td>
       
   
   
@@ -3318,7 +3725,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>6</td>
+        <td>8</td>
       
   
   
@@ -3358,7 +3765,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>195</td>
+        <td>196</td>
       
   
   
@@ -3388,7 +3795,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>177</td>
+        <td>178</td>
       
   
   
@@ -3428,7 +3835,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>0</td>
+        <td>2</td>
       
   
   
@@ -3480,7 +3887,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>0</td>
+        <td>2</td>
       
   
   
@@ -3515,91 +3922,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1274'>1274</a></td>
-  
-  
-  
-      
-        <td>119</td>
-      
-  
-  
-  
-      
-        <td>molivier-fcms</td>
-      
-  
-  
-  
-      
-        <td>Handle db, database_grant and table_grant from class postgresql::server</td>
-      
-  
-  
-  
-      
-        <td>@molivier-fcms Apologies but there isn't much documentation on this that I know of sorry, the best that I could give you would be a ink to this blog post which deals with how to write them:
-https://puppet.com/blog/unit-testing-rspec-puppet-for-beginners/
-
-Unfortunately the unit testing in this module is somewhat unique and so the documentation that does exist might not be as much use. The best way forward, and the route that I usually follow in times like this, is to go through the existing unit tests, find the file that corresponds to the area that has been added to and then use it as a base for the changes that I need to make. 
-Taking a look into the module this file looks to be where to start:
-https://github.com/puppetlabs/puppetlabs-postgresql/blob/main/spec/unit/classes/server_spec.rb
-With this line running test's that cover a similar function to the one you've change, i.e. `$roles.each |$rolename, $role| {`:
-https://github.com/puppetlabs/puppetlabs-postgresql/blob/main/spec/unit/classes/server_spec.rb#L234-L245
-
-I'm sorry that I'm not being more help on this, if you are till having trouble with this then I encourage you to reach out on the Puppet Community slack, the team holds an open answer session every week on Monday and there are usually community members willing to help give you advice.</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>37</td>
-      
-  
-  
-  
-      
-        <td>9</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1279'>1279</a></td>
   
   
   
       
-        <td>87</td>
+        <td>89</td>
       
   
   
@@ -3629,7 +3957,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>2</td>
+        <td>4</td>
       
   
   
@@ -3669,7 +3997,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>603</td>
+        <td>604</td>
       
   
   
@@ -3699,13 +4027,92 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>195</td>
+        <td>197</td>
       
   
   
   
       
         <td>10</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1274'>1274</a></td>
+  
+  
+  
+      
+        <td>120</td>
+      
+  
+  
+  
+      
+        <td>molivier-fcms</td>
+      
+  
+  
+  
+      
+        <td>Handle db, database_grant and table_grant from class postgresql::server</td>
+      
+  
+  
+  
+      
+        <td>@molivier-fcms Apologies but there isn't much documentation on this that I know of sorry, the best that I could give you would be a ink to this blog post which deals with how to write them:
+https://puppet.com/blog/unit-testing-rspec-puppet-for-beginners/
+
+Unfortunately the unit testing in this module is somewhat unique and so the documentation that does exist might not be as much use. The best way forward, and the route that I usually follow in times like this, is to go through the existing unit tests, find the file that corresponds to the area that has been added to and then use it as a base for the changes that I need to make. 
+Taking a look into the module this file looks to be where to start:
+https://github.com/puppetlabs/puppetlabs-postgresql/blob/main/spec/unit/classes/server_spec.rb
+With this line running test's that cover a similar function to the one you've change, i.e. `$roles.each |$rolename, $role| {`:
+https://github.com/puppetlabs/puppetlabs-postgresql/blob/main/spec/unit/classes/server_spec.rb#L234-L245
+
+I'm sorry that I'm not being more help on this, if you are till having trouble with this then I encourage you to reach out on the Puppet Community slack, the team holds an open answer session every week on Monday and there are usually community members willing to help give you advice.</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>38</td>
+      
+  
+  
+  
+      
+        <td>9</td>
       
   
   
@@ -3739,7 +4146,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>18</td>
+        <td>20</td>
       
   
   
@@ -3809,7 +4216,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>133</td>
+        <td>134</td>
       
   
   
@@ -3874,152 +4281,12 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1195'>1195</a></td>
-  
-  
-  
-      
-        <td>48</td>
-      
-  
-  
-  
-      
-        <td>valleedelisle</td>
-      
-  
-  
-  
-      
-        <td>(MODULES-11126) Replacing URI.escape with URI::DEFAULT_PARSER</td>
-      
-  
-  
-  
-      
-        <td>@david22swan i think this is related to cento6 EOL i.e. unrelated to the PR. i can't override can you? or should we just drop cento6 and rebase</td>
-      
-  
-  
-  
-      
-        <td>b4ldr</td>
-      
-  
-  
-  
-      
-        <td>15</td>
-      
-  
-  
-  
-      
-        <td>9</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1205'>1205</a></td>
-  
-  
-  
-      
-        <td>12</td>
-      
-  
-  
-  
-      
-        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
-      
-  
-  
-  
-      
-        <td>Fix serialization of undef in to_python()</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-stdlib?pullRequest=1205) All committers have signed the CLA.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>6</td>
-      
-  
-  
-  
-      
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1208'>1208</a></td>
   
   
   
       
-        <td>9</td>
+        <td>10</td>
       
   
   
@@ -4068,13 +4335,153 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>9</td>
+        <td>10</td>
       
   
   
   
       
         <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1195'>1195</a></td>
+  
+  
+  
+      
+        <td>49</td>
+      
+  
+  
+  
+      
+        <td>valleedelisle</td>
+      
+  
+  
+  
+      
+        <td>(MODULES-11126) Replacing URI.escape with URI::DEFAULT_PARSER</td>
+      
+  
+  
+  
+      
+        <td>@david22swan i think this is related to cento6 EOL i.e. unrelated to the PR. i can't override can you? or should we just drop cento6 and rebase</td>
+      
+  
+  
+  
+      
+        <td>b4ldr</td>
+      
+  
+  
+  
+      
+        <td>17</td>
+      
+  
+  
+  
+      
+        <td>9</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1205'>1205</a></td>
+  
+  
+  
+      
+        <td>14</td>
+      
+  
+  
+  
+      
+        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+      
+  
+  
+  
+      
+        <td>Fix serialization of undef in to_python()</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-stdlib?pullRequest=1205) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>8</td>
+      
+  
+  
+  
+      
+        <td>3</td>
       
   
   
