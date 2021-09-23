@@ -275,6 +275,78 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2192'>2192</a></td>
+  
+  
+  
+      
+        <td>11</td>
+      
+  
+  
+  
+      
+        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+      
+  
+  
+  
+      
+        <td>Add support for setting UserDir in Virual Hosts</td>
+      
+  
+  
+  
+      
+        <td>Thanks @smortex for submitting the PR. Ohh you are right. We can use `apache::mod::userdir` for specifying `UserDir`. 
+Just wondering that will lead two ways to use the same parameter. When it comes to maintenance we need to modify it in multiple places.
+</td>
+      
+  
+  
+  
+      
+        <td>sheenaajay</td>
+      
+  
+  
+  
+      
+        <td>10</td>
+      
+  
+  
+  
+      
+        <td>3</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2160'>2160</a></td>
   
   
@@ -529,57 +601,44 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2195'>2195</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2169'>2169</a></td>
   
   
   
       
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>yakatz</td>
+        <td>65</td>
       
   
   
   
       
-        <td>Allow `docroot` with `mod_vhost_alias` `virtual_docroot`</td>
+        <td>wbclark</td>
       
   
   
   
       
-        <td>[apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/7005622d0e1e5a9e1af032985db1e8b6485b6a41/manifests/vhost.pp) is a _type_
-----------------------------------
+        <td>Add an apache::vhost::proxy define</td>
+      
+  
+  
+  
+      
+        <td>Discussed with @ekohl and agreed to take over https://github.com/puppetlabs/puppetlabs-apache/pull/2167
 
-that may have no external impact to Forge modules.
-
-
-
-
-#### This module is declared in 173 of 578 indexed public `Puppetfiles`.
-
----------------------------------
-
-These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
-
-Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
-</td>
+This PR therefore contains my latest work on it to get the tests into a working state.</td>
       
   
   
   
       
-        <td>puppet-community-rangefinder[bot]</td>
+        <td>wbclark</td>
       
   
   
   
       
-        <td>3</td>
+        <td>65</td>
       
   
   
@@ -592,149 +651,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
-  
-  
-  
-      
-        <td>92</td>
-      
-  
-  
-  
-      
-        <td>bshelton</td>
-      
-  
-  
-  
-      
-        <td>Adds mod_authz_host</td>
-      
-  
-  
-  
-      
-        <td>@bshelton Thanks alot for your contribution. 
-@ekohl Thanks alot for the valuable comments.</td>
-      
-  
-  
-  
-      
-        <td>sheenaajay</td>
-      
-  
-  
-  
-      
-        <td>31</td>
-      
-  
-  
-  
-      
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2192'>2192</a></td>
-  
-  
-  
-      
-        <td>11</td>
-      
-  
-  
-  
-      
-        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
-      
-  
-  
-  
-      
-        <td>Add support for setting UserDir in Virual Hosts</td>
-      
-  
-  
-  
-      
-        <td>Thanks @smortex for submitting the PR. Ohh you are right. We can use `apache::mod::userdir` for specifying `UserDir`. 
-Just wondering that will lead two ways to use the same parameter. When it comes to maintenance we need to modify it in multiple places.
-</td>
-      
-  
-  
-  
-      
-        <td>sheenaajay</td>
-      
-  
-  
-  
-      
-        <td>10</td>
-      
-  
-  
-  
-      
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>false</td>
       
   
   
@@ -829,44 +745,57 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2169'>2169</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2195'>2195</a></td>
   
   
   
       
-        <td>65</td>
-      
-  
-  
-  
-      
-        <td>wbclark</td>
+        <td>3</td>
       
   
   
   
       
-        <td>Add an apache::vhost::proxy define</td>
+        <td>yakatz</td>
       
   
   
   
       
-        <td>Discussed with @ekohl and agreed to take over https://github.com/puppetlabs/puppetlabs-apache/pull/2167
+        <td>Allow `docroot` with `mod_vhost_alias` `virtual_docroot`</td>
+      
+  
+  
+  
+      
+        <td>[apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/7005622d0e1e5a9e1af032985db1e8b6485b6a41/manifests/vhost.pp) is a _type_
+----------------------------------
 
-This PR therefore contains my latest work on it to get the tests into a working state.</td>
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 173 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
       
   
   
   
       
-        <td>wbclark</td>
+        <td>puppet-community-rangefinder[bot]</td>
       
   
   
   
       
-        <td>65</td>
+        <td>3</td>
       
   
   
@@ -893,7 +822,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   <tr>
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt'>puppetlabs-apt</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
   
   
   
@@ -901,54 +830,55 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apt/pull/1008'>1008</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
   
   
   
       
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+        <td>93</td>
       
   
   
   
       
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
+        <td>bshelton</td>
       
   
   
   
       
-        <td>0 comments</td>
+        <td>Adds mod_authz_host</td>
       
   
   
   
       
-        <td></td>
+        <td>@bshelton Thanks alot for your contribution. 
+@ekohl Thanks alot for the valuable comments.</td>
       
   
   
   
       
-        <td>0</td>
+        <td>sheenaajay</td>
       
   
   
   
       
-        <td>0</td>
+        <td>31</td>
       
   
   
   
       
-        <td>true</td>
+        <td>3</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
@@ -1111,48 +1041,118 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1015'>1015</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1013'>1013</a></td>
   
   
   
       
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+        <td>17</td>
       
   
   
   
       
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
+        <td>onyxmaster</td>
       
   
   
   
       
-        <td>0 comments</td>
+        <td>Fix rpfilter parameter</td>
       
   
   
   
       
-        <td></td>
+        <td>It looks like the proposed improvement highlighted the issue with testing environment, the CentOS-6 doesn't appear to have support for the `xt_rpfilter` extension :(</td>
       
   
   
   
       
-        <td>0</td>
+        <td>onyxmaster</td>
       
   
   
   
       
-        <td>0</td>
+        <td>17</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
+  
+  
+  
+      
+        <td>190</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
+      
+  
+  
+  
+      
+        <td>Licensing folks have approved, reopening.</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>164</td>
+      
+  
+  
+  
+      
+        <td>4</td>
       
   
   
@@ -1238,146 +1238,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1013'>1013</a></td>
-  
-  
-  
-      
-        <td>16</td>
-      
-  
-  
-  
-      
-        <td>onyxmaster</td>
-      
-  
-  
-  
-      
-        <td>Fix rpfilter parameter</td>
-      
-  
-  
-  
-      
-        <td>It looks like the proposed improvement highlighted the issue with testing environment, the CentOS-6 doesn't appear to have support for the `xt_rpfilter` extension :(</td>
-      
-  
-  
-  
-      
-        <td>onyxmaster</td>
-      
-  
-  
-  
-      
-        <td>16</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
-  
-  
-  
-      
-        <td>190</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
-      
-  
-  
-  
-      
-        <td>Licensing folks have approved, reopening.</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>163</td>
-      
-  
-  
-  
-      
-        <td>4</td>
       
   
   
@@ -1636,7 +1496,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>305</td>
+        <td>306</td>
       
   
   
@@ -2008,76 +1868,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-inifile/pull/461'>461</a></td>
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
-      
-  
-  
-  
-      
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
-      
-  
-  
-  
-      
-        <td>0 comments</td>
-      
-  
-  
-  
-      
-        <td></td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-inifile'>puppetlabs-inifile</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-inifile/pull/457'>457</a></td>
   
   
@@ -2126,146 +1916,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java'>puppetlabs-java</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java/pull/498'>498</a></td>
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
-      
-  
-  
-  
-      
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
-      
-  
-  
-  
-      
-        <td>@david22swan is dropping a major OS really a bugfix? Shouldn't it be backwards-incompatible? Also could you do https://github.com/puppetlabs/puppetlabs-java/pull/497 before merging #498 ?</td>
-      
-  
-  
-  
-      
-        <td>bastelfreak</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java_ks'>puppetlabs-java_ks</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-java_ks/pull/379'>379</a></td>
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
-      
-  
-  
-  
-      
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
-      
-  
-  
-  
-      
-        <td>0 comments</td>
-      
-  
-  
-  
-      
-        <td></td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>0</td>
-      
-  
-  
-  
-      
-        <td>true</td>
       
   
   
@@ -2629,76 +2279,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
-  
-  
-  
-      
-        <td>84</td>
-      
-  
-  
-  
-      
-        <td>tejasbhosale009</td>
-      
-  
-  
-  
-      
-        <td>(feat) allow to set and run backups using another user via cron</td>
-      
-  
-  
-  
-      
-        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>45</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1439'>1439</a></td>
   
   
@@ -2858,7 +2438,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>21</td>
+        <td>22</td>
       
   
   
@@ -2893,83 +2473,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
   
   
   
       
-        <td>189</td>
-      
-  
-  
-  
-      
-        <td>fionera</td>
-      
-  
-  
-  
-      
-        <td>feat: Combine multiple grants into one while checking state</td>
-      
-  
-  
-  
-      
-        <td>Pinging @fionera, hopefully you can add a quick test to get this merged !
-Thanks</td>
-      
-  
-  
-  
-      
-        <td>fuyar</td>
-      
-  
-  
-  
-      
-        <td>62</td>
-      
-  
-  
-  
-      
-        <td>4</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>86</td>
+        <td>77</td>
       
   
   
@@ -2981,13 +2490,13 @@ Thanks</td>
   
   
       
-        <td>WIP - Remove backup classes</td>
+        <td>Deprecate unsupported Solaris platform</td>
       
   
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1418) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1418) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1418) it.</td>
       
   
   
@@ -2999,13 +2508,13 @@ Thanks</td>
   
   
       
-        <td>21</td>
+        <td>22</td>
       
   
   
   
       
-        <td>2</td>
+        <td>6</td>
       
   
   
@@ -3265,12 +2774,83 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1376'>1376</a></td>
   
   
   
       
-        <td>77</td>
+        <td>189</td>
+      
+  
+  
+  
+      
+        <td>fionera</td>
+      
+  
+  
+  
+      
+        <td>feat: Combine multiple grants into one while checking state</td>
+      
+  
+  
+  
+      
+        <td>Pinging @fionera, hopefully you can add a quick test to get this merged !
+Thanks</td>
+      
+  
+  
+  
+      
+        <td>fuyar</td>
+      
+  
+  
+  
+      
+        <td>62</td>
+      
+  
+  
+  
+      
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
+  
+  
+  
+      
+        <td>87</td>
       
   
   
@@ -3282,13 +2862,13 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>Deprecate unsupported Solaris platform</td>
+        <td>WIP - Remove backup classes</td>
       
   
   
   
       
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1418) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1418) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1418) it.</td>
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
       
   
   
@@ -3300,13 +2880,153 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>21</td>
+        <td>22</td>
       
   
   
   
       
-        <td>6</td>
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1440'>1440</a></td>
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+      
+  
+  
+  
+      
+        <td>(IAC-1595) Return Debian to Metadata</td>
+      
+  
+  
+  
+      
+        <td>0 comments</td>
+      
+  
+  
+  
+      
+        <td></td>
+      
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>0</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1413'>1413</a></td>
+  
+  
+  
+      
+        <td>84</td>
+      
+  
+  
+  
+      
+        <td>tejasbhosale009</td>
+      
+  
+  
+  
+      
+        <td>(feat) allow to set and run backups using another user via cron</td>
+      
+  
+  
+  
+      
+        <td>One comment on your changes, look's like it is causing some unit test failures as well</td>
+      
+  
+  
+  
+      
+        <td>david22swan</td>
+      
+  
+  
+  
+      
+        <td>45</td>
+      
+  
+  
+  
+      
+        <td>7</td>
       
   
   
@@ -3383,6 +3103,76 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1298'>1298</a></td>
+  
+  
+  
+      
+        <td>8</td>
+      
+  
+  
+  
+      
+        <td>fish-face</td>
+      
+  
+  
+  
+      
+        <td>Support setting default_privileges on all schemas</td>
+      
+  
+  
+  
+      
+        <td>The inline documentation reflected a previous version of the code; this has now been fixed. In particular this should now be backwards compatible. (I think an incompatible change would result in a better interface, but I don't know what requirements you'd have in this case. It could be a very significant difference in a small number of cases!)</td>
+      
+  
+  
+  
+      
+        <td>fish-face</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
       
   
   
@@ -3490,76 +3280,6 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1298'>1298</a></td>
-  
-  
-  
-      
-        <td>8</td>
-      
-  
-  
-  
-      
-        <td>fish-face</td>
-      
-  
-  
-  
-      
-        <td>Support setting default_privileges on all schemas</td>
-      
-  
-  
-  
-      
-        <td>The inline documentation reflected a previous version of the code; this has now been fixed. In particular this should now be backwards compatible. (I think an incompatible change would result in a better interface, but I don't know what requirements you'd have in this case. It could be a very significant difference in a small number of cases!)</td>
-      
-  
-  
-  
-      
-        <td>fish-face</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1297'>1297</a></td>
   
   
@@ -3583,16 +3303,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>@david22swan I'd be happy to add an acceptance test, but was unable to run the suite. The only instructions in the `README` result in everything failing - here's an example:
-```
-RuntimeError:
-       apply manifest failed
-       `LC_ALL=en_US.UTF-8  puppet apply /tmp/manifest_20210922_2275083_1f6kzlq.pp --trace --modulepath /home/clesueur/repos/puppetlabs-postgresql/spec/fixtures/modules --detailed-exitcodes`
-       with exit code 1 (expected: [0, 2])
-       ====== Start output of failed Puppet apply ======
-       Error: Parameter user failed on Exec[postgresql_initdb]: Only root can execute commands as other users (file: /home/clesueur/repos/puppetlabs-postgresql/spec/fixtures/modules/postgresql/manifests/server/initdb.pp, line: 140)
-```
-I guess I can try as root, but I am a bit wary that this might be trying to run commands that should be executing in a VM on the my actual machine. Is there anything beyond involving vagrant and virtualbox that needs to be done to set things up?</td>
+        <td>One other question about your and the other maintainers' workload at the moment - do you know how soon you are able to look at this and the other two PRs I created (or how often, if they need some iteration). I ask because we need to make some decisions about sequencing things which might be different depending on whether we anticipate these changes being in the official module or only on my fork at the start of next month. I understand if this isn't really predictable but thought I'd ask in case it was :)</td>
       
   
   
@@ -3604,13 +3315,13 @@ I guess I can try as root, but I am a bit wary that this might be trying to run 
   
   
       
-        <td>1</td>
+        <td>0</td>
       
   
   
   
       
-        <td>4</td>
+        <td>5</td>
       
   
   
@@ -3622,7 +3333,7 @@ I guess I can try as root, but I am a bit wary that this might be trying to run 
   
   
       
-        <td>true</td>
+        <td>false</td>
       
   
   
@@ -3753,7 +3464,7 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
   
       
-        <td>210</td>
+        <td>211</td>
       
   
   
@@ -3830,172 +3541,6 @@ I'm sorry that I'm not being more help on this, if you are till having trouble w
   
       
         <td>0</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-sqlserver'>puppetlabs-sqlserver</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-sqlserver/pull/393'>393</a></td>
-  
-  
-  
-      
-        <td>13</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
-      
-  
-  
-  
-      
-        <td>(MODULES-5472) Login values can now be passed as sensitive strings</td>
-      
-  
-  
-  
-      
-        <td>[sqlserver::config](https://github.com/puppetlabs/puppetlabs-sqlserver/blob/3750d232761d4ec0e84323d698b05b6aba3ad352/manifests/config.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-[sqlserver::login](https://github.com/puppetlabs/puppetlabs-sqlserver/blob/3750d232761d4ec0e84323d698b05b6aba3ad352/manifests/login.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-
-#### This module is declared in 3 of 578 indexed public `Puppetfiles`.
-
----------------------------------
-
-These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
-
-Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
-</td>
-      
-  
-  
-  
-      
-        <td>puppet-community-rangefinder[bot]</td>
-      
-  
-  
-  
-      
-        <td>13</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1210'>1210</a></td>
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>david22swan <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
-      
-  
-  
-  
-      
-        <td>pdksync - (IAC-1598) - Remove Support for Debian 8</td>
-      
-  
-  
-  
-      
-        <td>The current bugfix label is very usual for dropping an OS.
-
-It's also been extremely annoying to have so many major version bumps of stdlib for basically nothing. Is this really needed? The last major version bump hasn't even propagated through the community (I haven't even started on my modules). Please reconsider the policy on this.
-
-I feel like stdlib should stop listing individual OS releases. It's pretty much only Ruby code which is OS-independent.</td>
-      
-  
-  
-  
-      
-        <td>ekohl</td>
-      
-  
-  
-  
-      
-        <td>7</td>
-      
-  
-  
-  
-      
-        <td>1</td>
       
   
   
@@ -4101,7 +3646,7 @@ Thank you for your contribution.</td>
   
   
       
-        <td>27</td>
+        <td>28</td>
       
   
   
@@ -4131,7 +3676,7 @@ Thank you for your contribution.</td>
   
   
       
-        <td>21</td>
+        <td>22</td>
       
   
   
