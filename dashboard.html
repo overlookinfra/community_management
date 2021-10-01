@@ -1,0 +1,40 @@
+<html>
+<title>Github Action Nightly overview report</title>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="charts.js"></script>   
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+<script src='./web_libraries/sorttable.js'></script><link rel='stylesheet' href='./web_libraries/bootstrap.min.css'>
+<script src='./web_libraries/DataTables/datatables.js'></script><link rel='stylesheet' href='./web_libraries/DataTables/datatables.css'>
+<link type="text/css" rel="stylesheet" href="simplePagination.css"/>
+<script> $(document).ready(function() {
+    $('#table_pagination').DataTable( {
+        "pagingType": "full_numbers"
+    } );
+} );
+</script>
+</head>
+<body>
+<h1 style="text-align:center;">Github Actions Nightly Report overview</h1>
+<table class="columns">
+      <tr>
+       <td width="50%"><div id="donutchart_total_runs" style="width: 80%; height: 50%;"></div></td>
+      <td width="50%"><div id="donutchart_last_run" style="width: 80%; height: 50%;"></div></td>
+      </tr>
+    </table>
+    
+    <table>
+    <tr>
+       <td width="50%"><div id="steps_chart_total" style="width: 80%; height: 50%;"></div></td>
+      <td width="50%"><div id="steps_chart_run" style="width: 80%; height: 50%;"></div></td>
+      
+      </tr>
+      <tr>
+       <td width="50%"><div id="oses_chart_total" style="width: 80%; height: 50%;"></div></td>
+      <td width="50%"><div id="oses_chart_run" style="width: 80%; height: 50%;"></div></td>
+      </tr>
+    </table>
+<br>
+</body>
