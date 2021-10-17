@@ -34,10 +34,10 @@ google.charts.setOnLoadCallback(drawChart_last_run);
 function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  14],
+               ['Provision',  15],
                ['Install agent',  13],
-               ['Install module',  3],
-               ['Acceptance',  42],
+               ['Install module',  2],
+               ['Acceptance',  41],
             ]);
 
             var options = {title: 'Failed steps for the last 5 runs'}; 
@@ -51,10 +51,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  2],
+               ['Provision',  3],
                ['Install agent',  3],
-               ['Install module',  1],
-               ['Acceptance',  8]
+               ['Install module',  0],
+               ['Acceptance',  7]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -99,10 +99,10 @@ google.charts.setOnLoadCallback(drawChart_last_run);
 function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  14],
+               ['Provision',  15],
                ['Install agent',  13],
-               ['Install module',  3],
-               ['Acceptance',  42],
+               ['Install module',  2],
+               ['Acceptance',  41],
             ]);
 
             var options = {title: 'Failed steps for the last 5 runs'}; 
@@ -116,10 +116,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  2],
+               ['Provision',  3],
                ['Install agent',  3],
-               ['Install module',  1],
-               ['Acceptance',  8]
+               ['Install module',  0],
+               ['Acceptance',  7]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -164,10 +164,10 @@ google.charts.setOnLoadCallback(drawChart_last_run);
 function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  14],
+               ['Provision',  15],
                ['Install agent',  13],
-               ['Install module',  3],
-               ['Acceptance',  42],
+               ['Install module',  2],
+               ['Acceptance',  41],
             ]);
 
             var options = {title: 'Failed steps for the last 5 runs'}; 
@@ -181,10 +181,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  2],
+               ['Provision',  3],
                ['Install agent',  3],
-               ['Install module',  1],
-               ['Acceptance',  8]
+               ['Install module',  0],
+               ['Acceptance',  7]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -229,10 +229,10 @@ google.charts.setOnLoadCallback(drawChart_last_run);
 function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  14],
+               ['Provision',  15],
                ['Install agent',  13],
-               ['Install module',  3],
-               ['Acceptance',  42],
+               ['Install module',  2],
+               ['Acceptance',  41],
             ]);
 
             var options = {title: 'Failed steps for the last 5 runs'}; 
@@ -246,10 +246,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  2],
+               ['Provision',  3],
                ['Install agent',  3],
-               ['Install module',  1],
-               ['Acceptance',  8]
+               ['Install module',  0],
+               ['Acceptance',  7]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
