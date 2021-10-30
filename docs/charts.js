@@ -2,8 +2,8 @@ google.charts.load("current", { packages: ["corechart"] });
 function drawRunsChart() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 4272],
-        ['Failure', 119]
+        ['Success', 4275],
+        ['Failure', 117]
     ]);
     var options = {
         title: 'Runs Overview for the last 5 runs',
@@ -18,8 +18,8 @@ google.charts.setOnLoadCallback(drawRunsChart);
 function drawChart_last_run() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 844],
-        ['Failure', 35]
+        ['Success', 862],
+        ['Failure', 17]
     ]);
     var options = {
         title: 'Runs Overview for last night run',
@@ -35,7 +35,7 @@ function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
                ['Provision',  12],
-               ['Install agent',  40],
+               ['Install agent',  38],
                ['Install module',  0],
                ['Acceptance',  54],
             ]);
@@ -51,10 +51,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  1],
-               ['Install agent',  21],
+               ['Provision',  2],
+               ['Install agent',  4],
                ['Install module',  0],
-               ['Acceptance',  10]
+               ['Acceptance',  9]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -67,8 +67,8 @@ function drawStepsRunChart(){
 function drawRunsChart() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 4272],
-        ['Failure', 119]
+        ['Success', 4275],
+        ['Failure', 117]
     ]);
     var options = {
         title: 'Runs Overview for the last 5 runs',
@@ -83,8 +83,8 @@ google.charts.setOnLoadCallback(drawRunsChart);
 function drawChart_last_run() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 844],
-        ['Failure', 35]
+        ['Success', 862],
+        ['Failure', 17]
     ]);
     var options = {
         title: 'Runs Overview for last night run',
@@ -100,7 +100,7 @@ function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
                ['Provision',  12],
-               ['Install agent',  40],
+               ['Install agent',  38],
                ['Install module',  0],
                ['Acceptance',  54],
             ]);
@@ -116,10 +116,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  1],
-               ['Install agent',  21],
+               ['Provision',  2],
+               ['Install agent',  4],
                ['Install module',  0],
-               ['Acceptance',  10]
+               ['Acceptance',  9]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -132,8 +132,8 @@ function drawStepsRunChart(){
 function drawRunsChart() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 4272],
-        ['Failure', 119]
+        ['Success', 4275],
+        ['Failure', 117]
     ]);
     var options = {
         title: 'Runs Overview for the last 5 runs',
@@ -148,8 +148,8 @@ google.charts.setOnLoadCallback(drawRunsChart);
 function drawChart_last_run() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 844],
-        ['Failure', 35]
+        ['Success', 862],
+        ['Failure', 17]
     ]);
     var options = {
         title: 'Runs Overview for last night run',
@@ -165,7 +165,7 @@ function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
                ['Provision',  12],
-               ['Install agent',  40],
+               ['Install agent',  38],
                ['Install module',  0],
                ['Acceptance',  54],
             ]);
@@ -181,10 +181,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  1],
-               ['Install agent',  21],
+               ['Provision',  2],
+               ['Install agent',  4],
                ['Install module',  0],
-               ['Acceptance',  10]
+               ['Acceptance',  9]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
@@ -197,8 +197,8 @@ function drawStepsRunChart(){
 function drawRunsChart() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 4272],
-        ['Failure', 119]
+        ['Success', 4275],
+        ['Failure', 117]
     ]);
     var options = {
         title: 'Runs Overview for the last 5 runs',
@@ -213,8 +213,8 @@ google.charts.setOnLoadCallback(drawRunsChart);
 function drawChart_last_run() {
     var data = google.visualization.arrayToDataTable([
         ['Job Status', 'Total'],
-        ['Success', 844],
-        ['Failure', 35]
+        ['Success', 862],
+        ['Failure', 17]
     ]);
     var options = {
         title: 'Runs Overview for last night run',
@@ -230,7 +230,7 @@ function drawStepsTotalChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
                ['Provision',  12],
-               ['Install agent',  40],
+               ['Install agent',  38],
                ['Install module',  0],
                ['Acceptance',  54],
             ]);
@@ -246,10 +246,10 @@ function drawStepsTotalChart(){
 function drawStepsRunChart(){
     var data = google.visualization.arrayToDataTable([
                ['Steps', 'Failure'],
-               ['Provision',  1],
-               ['Install agent',  21],
+               ['Provision',  2],
+               ['Install agent',  4],
                ['Install module',  0],
-               ['Acceptance',  10]
+               ['Acceptance',  9]
             ]);
 
             var options = {title: 'Failed steps for the last run'}; 
