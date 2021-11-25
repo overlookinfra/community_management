@@ -199,270 +199,12 @@ ga('set', 'anonymizeIp', true);
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2205'>2205</a></td>
-  
-  
-  
-      
-        <td>34</td>
-      
-  
-  
-  
-      
-        <td>makerling</td>
-      
-  
-  
-  
-      
-        <td>(Modules-10646) - README link fixes</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-apache?pullRequest=2205) All committers have signed the CLA.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>34</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2160'>2160</a></td>
-  
-  
-  
-      
-        <td>153</td>
-      
-  
-  
-  
-      
-        <td>sircubbi</td>
-      
-  
-  
-  
-      
-        <td>Improve/silence warning from pull-request #2154</td>
-      
-  
-  
-  
-      
-        <td>I'm annoyed by the logged message, logged over and over, from every puppet node with apache, for each puppet run.
-All nodes are configured as standard as possible, so I don't think I need to see the warnings all the time.
-
-```
-  class { 'apache':
-  }
-  apache::vhost { $::fqdn:
-    port    => 80,
-    docroot => "/var/www/${::fqdn}",
-  }
-```
-This result in e.g.:
-```
-2021-09-23 18:41:07,692 WARN  [puppetserver] Scope(Apache::Vhost[foobar.infra.gazonk.com])
-    It is possible for multiple virtual hosts to be configured using the same $servername but a different port. When
-    using $use_servername_for_filenames, this can lead to duplicate resource declarations.
-    When $use_port_for_filenames = true, the $servername and $port parameters, sanitized, are used to construct log and
-    config file names.
-
-    From version v7.0.0 of the puppetlabs-apache module, this parameter will default to true. From version v8.0.0 of the
-    module, the $use_port_for_filenames will be removed and log/config file names will be derived from the
-    sanitized $servername parameter when not explicitly defined.
-```
-
-
-With only one port, there's no risk for duplicate declarations.
-With my standard code, I should see no warnings/instructions at all -- they just confuse me.
-
-The current defaults in v6 should be enough.
-The defaults in v7 and v8 should be also be enough.
-That is,. I should not need to do any changes to my code during this transition, neither add
-use_port_for_filenames = true nor remove it in v8.
-Therefore I should not be spammed with annoying warnings/instructions.
-</td>
-      
-  
-  
-  
-      
-        <td>elofu17</td>
-      
-  
-  
-  
-      
-        <td>59</td>
-      
-  
-  
-  
-      
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2202'>2202</a></td>
-  
-  
-  
-      
-        <td>42</td>
-      
-  
-  
-  
-      
-        <td>ekohl <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
-      
-  
-  
-  
-      
-        <td>Remove warnings and plans to change vhost default naming</td>
-      
-  
-  
-  
-      
-        <td>[apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/ce9b48d73f9d815c37324e8bbf9f4d1d5235d15f/manifests/vhost.pp) is a _type_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-
-#### This module is declared in 172 of 578 indexed public `Puppetfiles`.
-
----------------------------------
-
-These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
-
-Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
-</td>
-      
-  
-  
-  
-      
-        <td>puppet-community-rangefinder[bot]</td>
-      
-  
-  
-  
-      
-        <td>42</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2197'>2197</a></td>
   
   
   
       
-        <td>53</td>
+        <td>56</td>
       
   
   
@@ -507,7 +249,232 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>53</td>
+        <td>56</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2205'>2205</a></td>
+  
+  
+  
+      
+        <td>37</td>
+      
+  
+  
+  
+      
+        <td>makerling</td>
+      
+  
+  
+  
+      
+        <td>(Modules-10646) - README link fixes</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-apache?pullRequest=2205) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>37</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2202'>2202</a></td>
+  
+  
+  
+      
+        <td>45</td>
+      
+  
+  
+  
+      
+        <td>ekohl <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+      
+  
+  
+  
+      
+        <td>Remove warnings and plans to change vhost default naming</td>
+      
+  
+  
+  
+      
+        <td>[apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/ce9b48d73f9d815c37324e8bbf9f4d1d5235d15f/manifests/vhost.pp) is a _type_
+----------------------------------
+
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 172 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
+      
+  
+  
+  
+      
+        <td>puppet-community-rangefinder[bot]</td>
+      
+  
+  
+  
+      
+        <td>45</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1021'>1021</a></td>
+  
+  
+  
+      
+        <td>38</td>
+      
+  
+  
+  
+      
+        <td>JeffPsycle</td>
+      
+  
+  
+  
+      
+        <td>added support and OS references for AlmaLinux</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-firewall?pullRequest=1021) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>37</td>
       
   
   
@@ -542,12 +509,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
+  
+  
+  
+      
+        <td>253</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
+      
+  
+  
+  
+      
+        <td>If anybody from the main project is reading this, is there anything I can do to help get this merged up?  The most recent CI problems appears to be "can't post to Slack", which I'm pretty sure I don't have anything to do with.</td>
+      
+  
+  
+  
+      
+        <td>tskirvin</td>
+      
+  
+  
+  
+      
+        <td>45</td>
+      
+  
+  
+  
+      
+        <td>5</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1022'>1022</a></td>
   
   
   
       
-        <td>32</td>
+        <td>35</td>
       
   
   
@@ -592,153 +629,13 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>32</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/1021'>1021</a></td>
-  
-  
-  
-      
         <td>35</td>
       
   
   
   
       
-        <td>JeffPsycle</td>
-      
-  
-  
-  
-      
-        <td>added support and OS references for AlmaLinux</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-firewall?pullRequest=1021) All committers have signed the CLA.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>34</td>
-      
-  
-  
-  
-      
         <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall'>puppetlabs-firewall</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-firewall/pull/981'>981</a></td>
-  
-  
-  
-      
-        <td>250</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>lib/puppet/provider/firewall/iptables.rb - comments cleanup for parsing</td>
-      
-  
-  
-  
-      
-        <td>If anybody from the main project is reading this, is there anything I can do to help get this merged up?  The most recent CI problems appears to be "can't post to Slack", which I'm pretty sure I don't have anything to do with.</td>
-      
-  
-  
-  
-      
-        <td>tskirvin</td>
-      
-  
-  
-  
-      
-        <td>42</td>
-      
-  
-  
-  
-      
-        <td>5</td>
       
   
   
@@ -772,7 +669,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>47</td>
+        <td>50</td>
       
   
   
@@ -817,7 +714,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>47</td>
+        <td>50</td>
       
   
   
@@ -857,7 +754,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>136</td>
+        <td>139</td>
       
   
   
@@ -887,7 +784,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>42</td>
+        <td>45</td>
       
   
   
@@ -927,7 +824,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>56</td>
+        <td>59</td>
       
   
   
@@ -957,7 +854,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>55</td>
+        <td>58</td>
       
   
   
@@ -997,7 +894,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>678</td>
+        <td>681</td>
       
   
   
@@ -1028,7 +925,7 @@ $password_encryption is already given as parameter in the class.</td>
   
   
       
-        <td>45</td>
+        <td>48</td>
       
   
   
@@ -1063,82 +960,12 @@ $password_encryption is already given as parameter in the class.</td>
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1208'>1208</a></td>
-  
-  
-  
-      
-        <td>84</td>
-      
-  
-  
-  
-      
-        <td>chaen</td>
-      
-  
-  
-  
-      
-        <td>loadjson: do not send http_basic_authentication if not needed</td>
-      
-  
-  
-  
-      
-        <td>@chaen Look's like we're getting a few failures in the spec tests i you could give them a closer look</td>
-      
-  
-  
-  
-      
-        <td>david22swan</td>
-      
-  
-  
-  
-      
-        <td>35</td>
-      
-  
-  
-  
-      
-        <td>5</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib'>puppetlabs-stdlib</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-stdlib/pull/1205'>1205</a></td>
   
   
   
       
-        <td>87</td>
+        <td>90</td>
       
   
   
@@ -1191,7 +1018,7 @@ Thanks!</td>
   
   
       
-        <td>41</td>
+        <td>44</td>
       
   
   
