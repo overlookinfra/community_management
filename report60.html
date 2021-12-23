@@ -199,185 +199,12 @@ ga('set', 'anonymizeIp', true);
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2205'>2205</a></td>
-  
-  
-  
-      
-        <td>64</td>
-      
-  
-  
-  
-      
-        <td>makerling</td>
-      
-  
-  
-  
-      
-        <td>(Modules-10646) - README link fixes</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-apache?pullRequest=2205) All committers have signed the CLA.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>64</td>
-      
-  
-  
-  
-      
-        <td>1</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2160'>2160</a></td>
-  
-  
-  
-      
-        <td>183</td>
-      
-  
-  
-  
-      
-        <td>sircubbi</td>
-      
-  
-  
-  
-      
-        <td>Improve/silence warning from pull-request #2154</td>
-      
-  
-  
-  
-      
-        <td>I'm annoyed by the logged message, logged over and over, from every puppet node with apache, for each puppet run.
-All nodes are configured as standard as possible, so I don't think I need to see the warnings all the time.
-
-```
-  class { 'apache':
-  }
-  apache::vhost { $::fqdn:
-    port    => 80,
-    docroot => "/var/www/${::fqdn}",
-  }
-```
-This result in e.g.:
-```
-2021-09-23 18:41:07,692 WARN  [puppetserver] Scope(Apache::Vhost[foobar.infra.gazonk.com])
-    It is possible for multiple virtual hosts to be configured using the same $servername but a different port. When
-    using $use_servername_for_filenames, this can lead to duplicate resource declarations.
-    When $use_port_for_filenames = true, the $servername and $port parameters, sanitized, are used to construct log and
-    config file names.
-
-    From version v7.0.0 of the puppetlabs-apache module, this parameter will default to true. From version v8.0.0 of the
-    module, the $use_port_for_filenames will be removed and log/config file names will be derived from the
-    sanitized $servername parameter when not explicitly defined.
-```
-
-
-With only one port, there's no risk for duplicate declarations.
-With my standard code, I should see no warnings/instructions at all -- they just confuse me.
-
-The current defaults in v6 should be enough.
-The defaults in v7 and v8 should be also be enough.
-That is,. I should not need to do any changes to my code during this transition, neither add
-use_port_for_filenames = true nor remove it in v8.
-Therefore I should not be spammed with annoying warnings/instructions.
-</td>
-      
-  
-  
-  
-      
-        <td>elofu17</td>
-      
-  
-  
-  
-      
-        <td>89</td>
-      
-  
-  
-  
-      
-        <td>3</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2197'>2197</a></td>
   
   
   
       
-        <td>83</td>
+        <td>84</td>
       
   
   
@@ -422,7 +249,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>83</td>
+        <td>84</td>
       
   
   
@@ -457,12 +284,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2205'>2205</a></td>
+  
+  
+  
+      
+        <td>65</td>
+      
+  
+  
+  
+      
+        <td>makerling</td>
+      
+  
+  
+  
+      
+        <td>(Modules-10646) - README link fixes</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/puppetlabs/puppetlabs-apache?pullRequest=2205) All committers have signed the CLA.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>65</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2202'>2202</a></td>
   
   
   
       
-        <td>72</td>
+        <td>73</td>
       
   
   
@@ -507,7 +404,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>72</td>
+        <td>73</td>
       
   
   
@@ -547,7 +444,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>65</td>
+        <td>66</td>
       
   
   
@@ -577,7 +474,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>64</td>
+        <td>65</td>
       
   
   
@@ -617,7 +514,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>62</td>
+        <td>63</td>
       
   
   
@@ -662,7 +559,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>62</td>
+        <td>63</td>
       
   
   
@@ -702,7 +599,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>77</td>
+        <td>78</td>
       
   
   
@@ -747,7 +644,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>77</td>
+        <td>78</td>
       
   
   
@@ -787,7 +684,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>166</td>
+        <td>167</td>
       
   
   
@@ -817,7 +714,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>72</td>
+        <td>73</td>
       
   
   
@@ -857,7 +754,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>86</td>
+        <td>87</td>
       
   
   
@@ -887,7 +784,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>85</td>
+        <td>86</td>
       
   
   
@@ -927,7 +824,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>708</td>
+        <td>709</td>
       
   
   
@@ -958,7 +855,7 @@ $password_encryption is already given as parameter in the class.</td>
   
   
       
-        <td>75</td>
+        <td>76</td>
       
   
   
