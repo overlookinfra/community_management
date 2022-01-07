@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>203</td>
+        <td>206</td>
       
   
   
@@ -240,7 +240,7 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
       
-        <td>124</td>
+        <td>127</td>
       
   
   
@@ -275,97 +275,12 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2197'>2197</a></td>
-  
-  
-  
-      
-        <td>96</td>
-      
-  
-  
-  
-      
-        <td>henkworks</td>
-      
-  
-  
-  
-      
-        <td>Update modsec crs config and template</td>
-      
-  
-  
-  
-      
-        <td>[apache::mod::security](https://github.com/puppetlabs/puppetlabs-apache/blob/9d65d58cdc5ef0c425ca7dff505e7347f669ab13/manifests/mod/security.pp) is a _class_
-----------------------------------
-
-that may have no external impact to Forge modules.
-
-
-
-
-#### This module is declared in 173 of 578 indexed public `Puppetfiles`.
-
----------------------------------
-
-These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
-
-Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
-</td>
-      
-  
-  
-  
-      
-        <td>puppet-community-rangefinder[bot]</td>
-      
-  
-  
-  
-      
-        <td>96</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2160'>2160</a></td>
   
   
   
       
-        <td>196</td>
+        <td>199</td>
       
   
   
@@ -428,7 +343,7 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
       
-        <td>102</td>
+        <td>105</td>
       
   
   
@@ -468,7 +383,7 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
       
-        <td>195</td>
+        <td>198</td>
       
   
   
@@ -499,7 +414,7 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
       
-        <td>134</td>
+        <td>137</td>
       
   
   
@@ -511,7 +426,7 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
       
-        <td>false</td>
+        <td>true</td>
       
   
   
@@ -534,56 +449,56 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2192'>2192</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
   
   
   
       
-        <td>114</td>
-      
-  
-  
-  
-      
-        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+        <td>190</td>
       
   
   
   
       
-        <td>Add support for setting UserDir in Virual Hosts</td>
+        <td>storm49152</td>
       
   
   
   
       
-        <td>Thanks @smortex for submitting the PR. Ohh you are right. We can use `apache::mod::userdir` for specifying `UserDir`. 
-Just wondering that will lead two ways to use the same parameter. When it comes to maintenance we need to modify it in multiple places.
-</td>
+        <td>Fetch correct _module_id value in apache::mod::php</td>
       
   
   
   
       
-        <td>sheenaajay</td>
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
       
   
   
   
       
-        <td>113</td>
+        <td>ekohl</td>
       
   
   
   
       
-        <td>3</td>
+        <td>185</td>
       
   
   
   
       
-        <td>false</td>
+        <td>4</td>
+      
+  
+  
+  
+      
+        <td>true</td>
       
   
   
@@ -611,7 +526,7 @@ Just wondering that will lead two ways to use the same parameter. When it comes 
   
   
       
-        <td>168</td>
+        <td>171</td>
       
   
   
@@ -643,7 +558,7 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>168</td>
+        <td>171</td>
       
   
   
@@ -678,50 +593,135 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2197'>2197</a></td>
   
   
   
       
-        <td>187</td>
-      
-  
-  
-  
-      
-        <td>storm49152</td>
+        <td>99</td>
       
   
   
   
       
-        <td>Fetch correct _module_id value in apache::mod::php</td>
+        <td>henkworks</td>
       
   
   
   
       
-        <td>I think you're right. Here's the relevant code:
-https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
-It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+        <td>Update modsec crs config and template</td>
       
   
   
   
       
-        <td>ekohl</td>
+        <td>[apache::mod::security](https://github.com/puppetlabs/puppetlabs-apache/blob/9d65d58cdc5ef0c425ca7dff505e7347f669ab13/manifests/mod/security.pp) is a _class_
+----------------------------------
+
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 173 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
       
   
   
   
       
-        <td>182</td>
+        <td>puppet-community-rangefinder[bot]</td>
       
   
   
   
       
-        <td>4</td>
+        <td>99</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2192'>2192</a></td>
+  
+  
+  
+      
+        <td>117</td>
+      
+  
+  
+  
+      
+        <td>smortex <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
+      
+  
+  
+  
+      
+        <td>Add support for setting UserDir in Virual Hosts</td>
+      
+  
+  
+  
+      
+        <td>Thanks @smortex for submitting the PR. Ohh you are right. We can use `apache::mod::userdir` for specifying `UserDir`. 
+Just wondering that will lead two ways to use the same parameter. When it comes to maintenance we need to modify it in multiple places.
+</td>
+      
+  
+  
+  
+      
+        <td>sheenaajay</td>
+      
+  
+  
+  
+      
+        <td>116</td>
+      
+  
+  
+  
+      
+        <td>3</td>
       
   
   
@@ -755,7 +755,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>132</td>
+        <td>135</td>
       
   
   
@@ -800,7 +800,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>132</td>
+        <td>135</td>
       
   
   
@@ -840,7 +840,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>114</td>
+        <td>117</td>
       
   
   
@@ -870,7 +870,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>106</td>
+        <td>109</td>
       
   
   
@@ -905,82 +905,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
-  
-  
-  
-      
-        <td>408</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>Add ability to deploy helm v3</td>
-      
-  
-  
-  
-      
-        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
-      
-  
-  
-  
-      
-        <td>AblionGE</td>
-      
-  
-  
-  
-      
-        <td>281</td>
-      
-  
-  
-  
-      
-        <td>9</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/159'>159</a></td>
   
   
   
       
-        <td>190</td>
+        <td>193</td>
       
   
   
@@ -1177,7 +1107,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>190</td>
+        <td>193</td>
       
   
   
@@ -1212,12 +1142,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/129'>129</a></td>
+  
+  
+  
+      
+        <td>411</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>Add ability to deploy helm v3</td>
+      
+  
+  
+  
+      
+        <td>Hello @daianamezdrea , Rebase done but integration testings are not passing. Is my rebase correct ?</td>
+      
+  
+  
+  
+      
+        <td>AblionGE</td>
+      
+  
+  
+  
+      
+        <td>284</td>
+      
+  
+  
+  
+      
+        <td>9</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/137'>137</a></td>
   
   
   
       
-        <td>385</td>
+        <td>388</td>
       
   
   
@@ -1247,7 +1247,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>204</td>
+        <td>207</td>
       
   
   
@@ -1260,6 +1260,91 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-iis'>puppetlabs-iis</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-iis/pull/330'>330</a></td>
+  
+  
+  
+      
+        <td>93</td>
+      
+  
+  
+  
+      
+        <td>adrianiurca <span class='label label-primary'>iac</span> <span class='label label-warning'>puppet</span></td>
+      
+  
+  
+  
+      
+        <td>MODULES-11188: trim physicalpath for iis_application resource</td>
+      
+  
+  
+  
+      
+        <td>[iis_application](https://github.com/puppetlabs/puppetlabs-iis/blob/82c229517bcfbeba300b6c72cceb1e0879f6e642/lib/puppet/type/iis_application.rb) is a _type_
+----------------------------------
+
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 4 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
+      
+  
+  
+  
+      
+        <td>puppet-community-rangefinder[bot]</td>
+      
+  
+  
+  
+      
+        <td>93</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
       
   
   
@@ -1287,7 +1372,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>161</td>
+        <td>164</td>
       
   
   
@@ -1317,77 +1402,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>120</td>
-      
-  
-  
-  
-      
-        <td>2</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
-  
-  
-  
-      
-        <td>189</td>
-      
-  
-  
-  
-      
-        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
-      
-  
-  
-  
-      
-        <td>WIP - Remove backup classes</td>
-      
-  
-  
-  
-      
-        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
-      
-  
-  
-  
-      
-        <td>CLAassistant</td>
-      
-  
-  
-  
-      
-        <td>124</td>
+        <td>123</td>
       
   
   
@@ -1427,7 +1442,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>187</td>
+        <td>190</td>
       
   
   
@@ -1457,7 +1472,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>148</td>
+        <td>151</td>
       
   
   
@@ -1492,12 +1507,82 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1407'>1407</a></td>
+  
+  
+  
+      
+        <td>192</td>
+      
+  
+  
+  
+      
+        <td>ghoneycutt <span class='badge badge-secondary'>vox</span></td>
+      
+  
+  
+  
+      
+        <td>WIP - Remove backup classes</td>
+      
+  
+  
+  
+      
+        <td>[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/puppetlabs/puppetlabs-mysql?pullRequest=1407) before we can accept your contribution.You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/puppetlabs/puppetlabs-mysql?pullRequest=1407) it.</td>
+      
+  
+  
+  
+      
+        <td>CLAassistant</td>
+      
+  
+  
+  
+      
+        <td>127</td>
+      
+  
+  
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql'>puppetlabs-mysql</a></td>
+  
+  
+  
+      
+  
+  
+  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-mysql/pull/1418'>1418</a></td>
   
   
   
       
-        <td>180</td>
+        <td>183</td>
       
   
   
@@ -1527,7 +1612,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>124</td>
+        <td>127</td>
       
   
   
@@ -1567,7 +1652,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>99</td>
+        <td>102</td>
       
   
   
@@ -1597,7 +1682,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>98</td>
+        <td>101</td>
       
   
   
@@ -1610,6 +1695,77 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql'>puppetlabs-postgresql</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-postgresql/pull/1132'>1132</a></td>
+  
+  
+  
+      
+        <td>724</td>
+      
+  
+  
+  
+      
+        <td>Bouke</td>
+      
+  
+  
+  
+      
+        <td>Don't update password encrypted with SCRAM-SHA-256 if not changed</td>
+      
+  
+  
+  
+      
+        <td>Hello, I believe [config.pp](https://github.com/puppetlabs/puppetlabs-postgresql/blob/main/manifests/server/config.pp) should be adjusted as well to create the pg_hba default rule with scram-sha-256 accordingly.
+$password_encryption is already given as parameter in the class.</td>
+      
+  
+  
+  
+      
+        <td>vaol</td>
+      
+  
+  
+  
+      
+        <td>91</td>
+      
+  
+  
+  
+      
+        <td>12</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
