@@ -204,7 +204,7 @@ ga('set', 'anonymizeIp', true);
   
   
       
-        <td>207</td>
+        <td>211</td>
       
   
   
@@ -240,7 +240,7 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
       
-        <td>128</td>
+        <td>132</td>
       
   
   
@@ -280,7 +280,7 @@ Honestly I've sunk far too much time into this already, so I'm not going to spen
   
   
       
-        <td>100</td>
+        <td>104</td>
       
   
   
@@ -325,7 +325,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>100</td>
+        <td>104</td>
       
   
   
@@ -360,75 +360,43 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2160'>2160</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
   
   
   
       
-        <td>200</td>
-      
-  
-  
-  
-      
-        <td>sircubbi</td>
+        <td>203</td>
       
   
   
   
       
-        <td>Improve/silence warning from pull-request #2154</td>
+        <td>bshelton</td>
       
   
   
   
       
-        <td>I'm annoyed by the logged message, logged over and over, from every puppet node with apache, for each puppet run.
-All nodes are configured as standard as possible, so I don't think I need to see the warnings all the time.
-
-```
-  class { 'apache':
-  }
-  apache::vhost { $::fqdn:
-    port    => 80,
-    docroot => "/var/www/${::fqdn}",
-  }
-```
-This result in e.g.:
-```
-2021-09-23 18:41:07,692 WARN  [puppetserver] Scope(Apache::Vhost[foobar.infra.gazonk.com])
-    It is possible for multiple virtual hosts to be configured using the same $servername but a different port. When
-    using $use_servername_for_filenames, this can lead to duplicate resource declarations.
-    When $use_port_for_filenames = true, the $servername and $port parameters, sanitized, are used to construct log and
-    config file names.
-
-    From version v7.0.0 of the puppetlabs-apache module, this parameter will default to true. From version v8.0.0 of the
-    module, the $use_port_for_filenames will be removed and log/config file names will be derived from the
-    sanitized $servername parameter when not explicitly defined.
-```
-
-
-With only one port, there's no risk for duplicate declarations.
-With my standard code, I should see no warnings/instructions at all -- they just confuse me.
-
-The current defaults in v6 should be enough.
-The defaults in v7 and v8 should be also be enough.
-That is,. I should not need to do any changes to my code during this transition, neither add
-use_port_for_filenames = true nor remove it in v8.
-Therefore I should not be spammed with annoying warnings/instructions.
-</td>
+        <td>Adds mod_authz_host</td>
       
   
   
   
       
-        <td>elofu17</td>
+        <td>@bshelton Thanks alot for your contribution. 
+@ekohl Thanks alot for the valuable comments.</td>
       
   
   
   
       
-        <td>106</td>
+        <td>sheenaajay</td>
+      
+  
+  
+  
+      
+        <td>142</td>
       
   
   
@@ -463,49 +431,135 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2162'>2162</a></td>
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2202'>2202</a></td>
   
   
   
       
-        <td>199</td>
-      
-  
-  
-  
-      
-        <td>bshelton</td>
+        <td>93</td>
       
   
   
   
       
-        <td>Adds mod_authz_host</td>
+        <td>ekohl <span class='badge badge-secondary'>vox</span> <span class='badge badge-success'>tc</span></td>
       
   
   
   
       
-        <td>@bshelton Thanks alot for your contribution. 
-@ekohl Thanks alot for the valuable comments.</td>
+        <td>Remove warnings and plans to change vhost default naming</td>
       
   
   
   
       
-        <td>sheenaajay</td>
+        <td>[apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/ce9b48d73f9d815c37324e8bbf9f4d1d5235d15f/manifests/vhost.pp) is a _type_
+----------------------------------
+
+that may have no external impact to Forge modules.
+
+
+
+
+#### This module is declared in 172 of 578 indexed public `Puppetfiles`.
+
+---------------------------------
+
+These results were generated with [Rangefinder](https://github.com/puppetlabs/puppet-community-rangefinder), a tool that helps predict the downstream impact of breaking changes to elements used in Puppet modules. You can run this on the command line to get a full report.
+
+Exact matches are those that we can positively identify via namespace and the declaring modules' metadata. Non-namespaced items, such as Puppet 3.x functions, will always be reported as near matches only.
+</td>
       
   
   
   
       
-        <td>138</td>
+        <td>puppet-community-rangefinder[bot]</td>
       
   
   
   
       
-        <td>3</td>
+        <td>93</td>
+      
+  
+  
+  
+      
+        <td>1</td>
+      
+  
+  
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
+  
+  
+  
+      
+        <td>195</td>
+      
+  
+  
+  
+      
+        <td>storm49152</td>
+      
+  
+  
+  
+      
+        <td>Fetch correct _module_id value in apache::mod::php</td>
+      
+  
+  
+  
+      
+        <td>I think you're right. Here's the relevant code:
+https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
+It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
+      
+  
+  
+  
+      
+        <td>ekohl</td>
+      
+  
+  
+  
+      
+        <td>190</td>
+      
+  
+  
+  
+      
+        <td>4</td>
       
   
   
@@ -539,7 +593,7 @@ Therefore I should not be spammed with annoying warnings/instructions.
   
   
       
-        <td>118</td>
+        <td>122</td>
       
   
   
@@ -571,7 +625,7 @@ Just wondering that will lead two ways to use the same parameter. When it comes 
   
   
       
-        <td>117</td>
+        <td>121</td>
       
   
   
@@ -611,7 +665,7 @@ Just wondering that will lead two ways to use the same parameter. When it comes 
   
   
       
-        <td>172</td>
+        <td>176</td>
       
   
   
@@ -643,85 +697,13 @@ This PR therefore contains my latest work on it to get the tests into a working 
   
   
       
-        <td>172</td>
+        <td>176</td>
       
   
   
   
       
         <td>2</td>
-      
-  
-  
-  
-      
-        <td>true</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache'>puppetlabs-apache</a></td>
-  
-  
-  
-      
-  
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-apache/pull/2163'>2163</a></td>
-  
-  
-  
-      
-        <td>191</td>
-      
-  
-  
-  
-      
-        <td>storm49152</td>
-      
-  
-  
-  
-      
-        <td>Fetch correct _module_id value in apache::mod::php</td>
-      
-  
-  
-  
-      
-        <td>I think you're right. Here's the relevant code:
-https://github.com/puppetlabs/puppetlabs-apache/blob/337e8b00b2a54f503e2ab0fa5c16d7a3a648c302/manifests/mod/php.pp#L64-L71
-It looks like it should be using `$_php_version_no_dot` instead of `$php_version` there. However, I don't know if that breaks other distros.</td>
-      
-  
-  
-  
-      
-        <td>ekohl</td>
-      
-  
-  
-  
-      
-        <td>186</td>
-      
-  
-  
-  
-      
-        <td>4</td>
       
   
   
@@ -755,7 +737,7 @@ It looks like it should be using `$_php_version_no_dot` instead of `$php_version
   
   
       
-        <td>136</td>
+        <td>140</td>
       
   
   
@@ -800,7 +782,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>136</td>
+        <td>140</td>
       
   
   
@@ -840,7 +822,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>118</td>
+        <td>122</td>
       
   
   
@@ -870,7 +852,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>110</td>
+        <td>114</td>
       
   
   
@@ -910,7 +892,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>412</td>
+        <td>416</td>
       
   
   
@@ -940,7 +922,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>285</td>
+        <td>289</td>
       
   
   
@@ -975,82 +957,12 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
   
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/137'>137</a></td>
-  
-  
-  
-      
-        <td>389</td>
-      
-  
-  
-  
-      
-        <td>treydock</td>
-      
-  
-  
-  
-      
-        <td>Add support for Helm v3 (continued)</td>
-      
-  
-  
-  
-      
-        <td>Please try this and let me know if it works, sorry for my late answer, I was trying to find a good solution for the problem and then I forgot about it, thank you!</td>
-      
-  
-  
-  
-      
-        <td>daianamezdrea</td>
-      
-  
-  
-  
-      
-        <td>208</td>
-      
-  
-  
-  
-      
-        <td>11</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  
-      
-        <td>false</td>
-      
-  
-  
-  </tr>
-
-  <tr>
-  
-  
-      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
-  
-  
-  
-      
-  
-  
-  
       <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/159'>159</a></td>
   
   
   
       
-        <td>194</td>
+        <td>198</td>
       
   
   
@@ -1247,7 +1159,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>194</td>
+        <td>198</td>
       
   
   
@@ -1260,6 +1172,76 @@ Exact matches are those that we can positively identify via namespace and the de
   
       
         <td>true</td>
+      
+  
+  
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm'>puppetlabs-helm</a></td>
+  
+  
+  
+      
+  
+  
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/puppetlabs-helm/pull/137'>137</a></td>
+  
+  
+  
+      
+        <td>393</td>
+      
+  
+  
+  
+      
+        <td>treydock</td>
+      
+  
+  
+  
+      
+        <td>Add support for Helm v3 (continued)</td>
+      
+  
+  
+  
+      
+        <td>Please try this and let me know if it works, sorry for my late answer, I was trying to find a good solution for the problem and then I forgot about it, thank you!</td>
+      
+  
+  
+  
+      
+        <td>daianamezdrea</td>
+      
+  
+  
+  
+      
+        <td>212</td>
+      
+  
+  
+  
+      
+        <td>11</td>
+      
+  
+  
+  
+      
+        <td>false</td>
       
   
   
@@ -1287,7 +1269,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>94</td>
+        <td>98</td>
       
   
   
@@ -1332,7 +1314,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>94</td>
+        <td>98</td>
       
   
   
@@ -1372,7 +1354,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>165</td>
+        <td>169</td>
       
   
   
@@ -1402,7 +1384,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>124</td>
+        <td>128</td>
       
   
   
@@ -1442,7 +1424,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>193</td>
+        <td>197</td>
       
   
   
@@ -1472,7 +1454,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>128</td>
+        <td>132</td>
       
   
   
@@ -1512,7 +1494,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>184</td>
+        <td>188</td>
       
   
   
@@ -1542,7 +1524,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>128</td>
+        <td>132</td>
       
   
   
@@ -1582,7 +1564,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>191</td>
+        <td>195</td>
       
   
   
@@ -1612,7 +1594,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>152</td>
+        <td>156</td>
       
   
   
@@ -1652,7 +1634,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>103</td>
+        <td>107</td>
       
   
   
@@ -1682,7 +1664,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>102</td>
+        <td>106</td>
       
   
   
@@ -1722,7 +1704,7 @@ Exact matches are those that we can positively identify via namespace and the de
   
   
       
-        <td>725</td>
+        <td>729</td>
       
   
   
@@ -1753,7 +1735,7 @@ $password_encryption is already given as parameter in the class.</td>
   
   
       
-        <td>92</td>
+        <td>96</td>
       
   
   
