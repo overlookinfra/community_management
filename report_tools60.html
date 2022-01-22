@@ -159,6 +159,138 @@ ga('set', 'anonymizeIp', true);
   
 
   
+      <td><a target ="_blank" href='https://github.com/puppetlabs/iac'>IAC Blog</a></td>
+  
+  
+  
+
+  
+      
+  
+  
+  
+
+  
+      <td><a target ="_blank" href='https://github.com/puppetlabs/iac/pull/317'>317</a></td>
+  
+  
+  
+
+  
+      
+        <td>108</td>
+      
+  
+  
+  
+
+  
+      
+        <td>chaen</td>
+      
+  
+  
+  
+
+  
+      
+        <td>contributing: doc to run a single test</td>
+      
+  
+  
+  
+  <td>
+  <div class="content hideContent">
+     Also, something that may be interesting in the doc for totally ignorant people (like me :-) ) is how I can run the tests for a specific version of puppet/ruby. As you can see, I have failures only for one version of that couple, but I am struggling in reproducing: 
+https://github.com/puppetlabs/puppetlabs-stdlib/runs/3859406073?check_suite_focus=true
+
+I think ultimately what would be nice is a couple of commands, starting with `docker run`, which would put people in the correct environment they need to run `pdk bundle exec rake spec`.
+
+I tried reproducing what's in the workflow file (https://github.com/puppetlabs/puppetlabs-stdlib/blob/15e13b2b63f0f4b24e68a46cd4c2703682006d8f/.github/workflows/spec.yml#L77-L130) 
+
+If I try to set the env variable `PUPPET_GEM_VERSION`, `pdk` complains
+
+```bash
+root@943f4a62533a:/tmp/puppetlabs-stdlib# PUPPET_GEM_VERSION=6.0 pdk bundle exec rake spec SPEC=spec/functions/loadjson_spec.rb 
+pdk (INFO): Using Ruby 2.7.3
+pdk (INFO): Using Puppet 7.12.0
+pdk (WARN): PUPPET_GEM_VERSION is not supported by PDK. Use the --puppet-version option on your PDK command or set the PDK_PUPPET_VERSION environment variable instead
+```
+
+If I try with `PDK_PUPPET_VERSION`, I have another issue 
+
+```
+root@943f4a62533a:/tmp/puppetlabs-stdlib# PDK_PUPPET_VERSION=6.0 pdk bundle exec rake spec SPEC=spec/functions/loadjson_spec.rb 
+pdk (INFO): Using Ruby 2.5.9
+pdk (INFO): Using Puppet 6.0.10
+pdk (WARN): FACTER_GEM_VERSION is not supported by PDK.
+Bundler could not find compatible versions for gem "puppet":
+  In Gemfile:
+    puppet (= 6.0.10)
+
+    puppet-module-posix-system-r2.5 (~> 1.0) was resolved to 1.1.1, which depends on
+      puppet_litmus (~> 0.20) was resolved to 0.30.0, which depends on
+        bolt (>= 2.0.1, = 6.18.0)
+```
+
+
+</div>
+ <div class="show-more">
+        <a href="#">Show more</a>
+    </div></td>
+
+
+  
+      
+  
+  
+  
+
+  
+      
+        <td>chaen</td>
+      
+  
+  
+  
+
+  
+      
+        <td>61</td>
+      
+  
+  
+  
+
+  
+      
+        <td>2</td>
+      
+  
+  
+  
+
+  
+      
+        <td>true</td>
+      
+  
+  
+  
+
+  
+      
+        <td>false</td>
+      
+  
+  
+  </tr>
+
+  <tr>
+  
+  
+
+  
       <td><a target ="_blank" href='https://github.com/voxpupuli/metadata-json-lint'>metadata-json-lint</a></td>
   
   
@@ -178,7 +310,7 @@ ga('set', 'anonymizeIp', true);
 
   
       
-        <td>121</td>
+        <td>123</td>
       
   
   
@@ -224,7 +356,7 @@ ga('set', 'anonymizeIp', true);
 
   
       
-        <td>79</td>
+        <td>81</td>
       
   
   
@@ -278,7 +410,7 @@ ga('set', 'anonymizeIp', true);
 
   
       
-        <td>89</td>
+        <td>91</td>
       
   
   
@@ -324,7 +456,7 @@ ga('set', 'anonymizeIp', true);
 
   
       
-        <td>85</td>
+        <td>87</td>
       
   
   
