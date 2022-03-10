@@ -55,6 +55,7 @@ end
 wanted_labels = [
   { name: 'backwards-incompatible', color: 'd63700' },
   { name: 'bugfix', color: '00d87b' },
+  { name: 'community', color: '5319e7' },
   { name: 'dependencies', color: '0366d6' },
   { name: 'feature', color: '222222' },
   { name: 'maintenance', color: 'ffd86e' },
